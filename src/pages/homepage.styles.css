@@ -1,0 +1,15 @@
+.homepage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 90vh;
+  /* //   grid-auto-rows: minmax(100px, auto); */
+}
+
+.left-content-hero {
+  background-color: white;
+}
+
+.background-image {
+  height: 100%;
+  background-repeat: no-repeat;
+}
