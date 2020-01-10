@@ -4,7 +4,7 @@ import './project.styles.css';
 
 const Projects = () => {
   return (
-    <div className="projects">
+    <div className="project-section">
       <h2>Projects</h2>
       <Card projectName="Event Hive" />
       <Card projectName="Dress Me" />

@@ -1,8 +1,9 @@
 import React from 'react';
+import './contact.styles.css';
 
-const Footer = () => {
+const Contact = () => {
   return (
-    <div>
+    <div className="contact">
       <h1>Contact</h1>
       <span>Github</span>
       <span>LinkedIn</span>
@@ -13,4 +14,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Contact;

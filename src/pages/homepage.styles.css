@@ -2,14 +2,37 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 90vh;
+
   /* //   grid-auto-rows: minmax(100px, auto); */
 }
 
+.hero-h1 {
+  font-size: 3.5em;
+}
+
 .left-content-hero {
+  display: flex;
+  flex-direction: column;
   background-color: white;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
 }
 
 .background-image {
-  height: 100%;
+  background-size: contain;
+  max-width: 100%;
+  height: auto;
   background-repeat: no-repeat;
+  margin-top: 10vh;
+  margin-bottom: 14vh;
+}
+
+.link-and-button-container {
+  padding: 1em 1em 1em 1em;
+}
+
+.link-and-button-container a,
+div {
+  padding: 1em 1em 1em 1em;
 }

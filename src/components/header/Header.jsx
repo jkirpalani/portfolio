@@ -7,7 +7,7 @@ const Header = () => (
   <div className="header">
     <Link className="logo-container" to="/"></Link>
     <div className="options">
-      <Link className="option" to="/#projects">
+      <Link className="option" to="/#project-section">
         PROJECTS
       </Link>
       <Link className="option" to="/#about">
