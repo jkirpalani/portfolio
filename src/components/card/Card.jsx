@@ -1,26 +1,14 @@
 import React from 'react';
 import './card.styles.css';
-import cardImage from '../../assets/images/small-robot.png';
 
-const Card = ({ projectName }) => {
+const Card = ({ image }) => {
   return (
     <div className="card">
-      <div
-        className="card-image"
-        style={{ backgroundImage: `url(${cardImage}` }}
-      ></div>
-
-      <h3>{projectName}</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
-        magnam nostrum natus corrupti mollitia. Qui!
-      </p>
-      <a href src="">
-        Code
-      </a>
-      <a href src="">
-        Website
-      </a>
+      <img src={image} alt="Avatar" />
+      <div class="container">
+        <h4>John Doe</h4>
+        <p>Architect & Engineer</p>
+      </div>
     </div>
   );
 };

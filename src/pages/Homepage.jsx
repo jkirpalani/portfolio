@@ -9,8 +9,10 @@ const Homepage = () => (
       <h1 className="hero-h1">Johnny Kirpalani</h1>
       <h2>Front End Engineer</h2>
       <div className="link-and-button-container">
-        <CustomButton>Projects</CustomButton>
-        <a href src="">
+        <CustomButton className="homepage-projects-button">
+          See Projects
+        </CustomButton>
+        <a href src="" className="resume-link">
           Resume
         </a>
       </div>

@@ -1,6 +1,0 @@
-.toolbox {
-  display: grid;
-  background-color: lightgray;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100px;
-}

@@ -32,7 +32,13 @@
   padding: 1em 1em 1em 1em;
 }
 
-.link-and-button-container a,
-div {
-  padding: 1em 1em 1em 1em;
+button.homepage-projects-button {
+  padding: 0.6em 2em;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #1976d2;
+  font-size: 1.1em;
+  border: 0;
+  cursor: pointer;
+  margin: 1em;
 }

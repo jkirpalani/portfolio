@@ -1,4 +1,5 @@
-.card-image {
-  height: 100%;
-  background-repeat: no-repeat;
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
