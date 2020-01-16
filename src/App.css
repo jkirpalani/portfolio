@@ -5,6 +5,7 @@ body {
 
 a {
   text-decoration: none;
-  color: blue;
-  size: 20px;
+  color: #1e5bde;
+  size: 16px;
+  cursor: pointer;
 }

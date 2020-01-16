@@ -6,22 +6,27 @@ import Background from '../assets/images/vippng.com-robot-png-5143307.png';
 const Homepage = () => (
   <div className="homepage">
     <div className="left-content-hero">
-      <h1 className="hero-h1">Johnny Kirpalani</h1>
-      <h2>Front End Engineer</h2>
+      <h2 className="hero-h2">Hello!</h2>
+
+      <h1 className="hero-h1">
+        My name is <span className="highlight">Johnny Kirpalani</span>.
+      </h1>
+      <h2 className="hero-h3">
+        I'm a <span className="highlight">Full Stack Software Engineer </span>
+        from NYC.
+      </h2>
       <div className="link-and-button-container">
-        <CustomButton className="homepage-projects-button">
-          See Projects
-        </CustomButton>
+        <CustomButton>Explore My Projects</CustomButton>
         <a href src="" className="resume-link">
-          Resume
+          View My Resume
         </a>
       </div>
     </div>
 
     <div
       className="background-image"
-      style={{ backgroundImage: `url(${Background}` }}
-    ></div>
+      style={{ backgroundImage: `url(${Background})` }}
+    />
   </div>
 );
 export default Homepage;

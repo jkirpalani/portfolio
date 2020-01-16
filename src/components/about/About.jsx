@@ -16,9 +16,9 @@ const About = () => {
         odio quaerat praesentium nisi error laborum?
       </p>
       <div className="logo-group">
-        <JavascriptLogo className="javascript-logo" />
-        <NodeLogo className="node-logo" />
-        <ReactLogo className="react-logo" />
+        <JavascriptLogo className="javascript-logo" id="logo" />
+        <NodeLogo className="node-logo" id="logo" />
+        <ReactLogo className="react-logo" id="logo" />
       </div>
     </div>
   );
