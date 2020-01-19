@@ -1,11 +1,16 @@
 body {
   font-family: 'Raleway', sans-serif;
   background-color: white;
+  color: #3f3d54;
 }
 
 a {
+  color: #1469b8;
   text-decoration: none;
-  color: #1e5bde;
   size: 16px;
   cursor: pointer;
+}
+
+a:hover {
+  color: #164a7b;
 }

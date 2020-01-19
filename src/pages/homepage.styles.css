@@ -6,14 +6,17 @@
 
 .hero-h1 {
   font-size: 3.4em;
+  font-weight: 200;
 }
 
 .hero-h2 {
   font-size: 2.2em;
+  font-weight: 200;
 }
 
 .hero-h3 {
   font-size: 1.8em;
+  font-weight: 200;
 }
 
 .left-content-hero {
@@ -35,14 +38,6 @@
   margin-bottom: 14vh;
 }
 
-.link-and-button-container {
-  padding: 1em 1em 1em 0;
-}
-
-.link-and-button-container > a:hover {
-  color: rgb(1, 1, 12);
-}
-
 button.homepage-projects-button {
   padding: 0.6em 2em;
   border-radius: 16px;
@@ -55,10 +50,10 @@ button.homepage-projects-button {
 }
 
 .highlight {
-  color: #ff4653;
+  color: #ff6584;
 }
 
-.nav-icon {
+.fa-icon {
   margin-left: 5px;
   margin-right: 5px;
 }
