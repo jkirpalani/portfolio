@@ -13,7 +13,7 @@
   //   }
 
   .options {
-    width: 50%;
+    width: 70%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -24,10 +24,20 @@
     .option {
       padding: 10px 15px;
       color: black;
+      transition: 0.5s;
     }
 
     .option:hover {
-      color: #ff4653;
+      color: #51e5c4;
+      // border: 1px solid #ff4653;
+      border-radius: 14px;
+      text-decoration: underline;
+      text-decoration-color: black;
+    }
+
+    .nav-icon {
+      margin-left: 10px;
+      margin-right: 10px;
     }
   }
 }

@@ -8,6 +8,7 @@
   cursor: pointer;
   margin-right: 1em;
   border: 1px solid #ff4653;
+  transition: 0.4s;
 }
 
 .custom-button:hover {
