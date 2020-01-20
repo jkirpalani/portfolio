@@ -8,7 +8,7 @@ import './header.styles.scss';
 const Header = () => (
   <div className="header">
     <Link className="logo-container" to="/">
-      Johnny Kirpalani
+      JK
     </Link>
     <div className="options">
       <Link className="option" to="/#project-section">
@@ -16,6 +16,7 @@ const Header = () => (
           <FontAwesomeIcon icon="wrench" className="option-icon" /> PROJECTS
         </span>
       </Link>
+
       <Link className="option" to="/#about">
         <span>
           <FontAwesomeIcon icon="user-astronaut" className="option-icon" />{' '}
@@ -27,6 +28,7 @@ const Header = () => (
           <FontAwesomeIcon icon="paper-plane" className="option-icon" /> CONTACT
         </span>
       </Link>
+
       <div>|</div>
       <a href className="icon" to="">
         <FontAwesomeIcon icon={['fab', 'github']} className="nav-icon" />

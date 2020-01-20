@@ -23,19 +23,17 @@
   height: 40%;
   display: flex;
   flex-direction: column;
-  background-color: white;
   justify-self: center;
-  align-self: center;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .background-image {
   background-size: contain;
-  max-width: 100%;
-  height: auto;
+  max-height: 70%;
+  width: auto;
   background-repeat: no-repeat;
   margin-top: 10vh;
-  margin-bottom: 14vh;
 }
 
 button.homepage-projects-button {

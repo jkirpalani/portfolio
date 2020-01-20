@@ -37,7 +37,9 @@ const Homepage = () => (
     <div
       className="background-image"
       style={{ backgroundImage: `url(${HeroImg})` }}
-    />
+    >
+      {' '}
+    </div>
   </div>
 );
 export default Homepage;

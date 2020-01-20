@@ -1,5 +1,5 @@
 .header {
-  height: 10vh;
+  height: 70px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -7,19 +7,23 @@
 
   .logo-container {
     height: 100%;
-    width: 175px;
+    width: 70px;
     padding: 25px;
-    font-size: 1.5em;
+    justify-self: center;
   }
 
   .options {
-    width: 60%;
+    width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     font-size: 1.3em;
     padding-right: 30px;
+
+    .group:hover {
+      color: #51e5c4;
+    }
 
     .option {
       padding: 10px 15px;
@@ -38,12 +42,11 @@
       color: #1469b8;
       transition: 0.5s;
     }
+
     .option:hover,
     .option-icon:hover,
     .nav-icon:hover {
       color: #51e5c4;
-      // border: 1px solid #ff4653;
-      // border-radius: 14px;
     }
   }
 }
