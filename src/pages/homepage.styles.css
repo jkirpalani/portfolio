@@ -20,6 +20,8 @@
 }
 
 .left-content-hero {
+  margin-top: 10vh;
+  margin-left: 7vh;
   height: 40%;
   display: flex;
   flex-direction: column;
@@ -54,4 +56,8 @@ button.homepage-projects-button {
 .fa-icon {
   margin-left: 5px;
   margin-right: 5px;
+}
+
+.link-and-button-container {
+  margin-top: 2em;
 }

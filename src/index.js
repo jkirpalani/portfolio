@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons';
+import { fab, faReact, faNode, faJs } from '@fortawesome/free-brands-svg-icons';
 import {
   faWrench,
   faUserAstronaut,
@@ -21,7 +21,10 @@ library.add(
   faPaperPlane,
   faRocket,
   faEnvelope,
-  faFile
+  faFile,
+  faReact,
+  faJs,
+  faNode
 );
 
 ReactDOM.render(

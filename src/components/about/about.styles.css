@@ -1,14 +1,24 @@
 .about {
-  background-color: #3f3d55;
-  color: #f2f2f2;
+  background-color: #1369b7;
+  color: white;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   justify-content: space-between;
+  font-size: 1.5rem;
+}
+.paragraphs {
+  justify-content: flex-start;
+  max-width: 70%;
 }
 
-#logo {
-  height: 50%;
+.about .logo-group {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about .fa-icon {
+  font-size: 5rem;
 }
