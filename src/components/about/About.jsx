@@ -12,24 +12,24 @@ const About = () => {
       <h2>About Me</h2>
       <div className="paragraphs">
         <p>
-          As a technology enthusiast coming from Sales and Customer Service
-          roles within the Banking, Real Estate and Wholesale industries, I
-          sought to transition into a field that leveraged my relationship
-          building ability with my passion for solving complex problems. After
-          working with Software Developers at BitBot, I began building
-          Wordpress-based websites as a hobby. While I enjoyed building these
-          websites for friends and relatives, I felt that I was not sufficiently
-          challenging myself. I desired more control over the development
-          process and I wanted to produce websites with advanced functionality.
-        </p>{' '}
+          After working in Sales for several years, my passion for problem
+          solving and building useful things facilitated my journey into web
+          development. My journey began with building Wordpress-based websites
+          as a hobby, which led to word-of-mouth referrals for freelance web
+          development contracts. After the successful completion of these
+          projects (and having a blast the entire time), I took the leap and
+          enrolled in Fullstack Academy's Software Engineering Immersive
+          Program, where I cultivated my technical and collaborative skills
+          through building full stack projects using Agile methodologies.
+        </p>
         <p>
-          After extensive research, I began teaching myself Javascript and
-          eventually enrolled at Fullstack Academy, where I deepened my
-          knowledge of Javascript and gained proficiency in React, Node.js.,
-          Redux, Express, Sequelize, and other technologies. I’m presently a
-          full stack developer specializing in Javascript. I'm now looking for
-          work for an organization where I can help solve interesting technical
-          challenges.
+          I am eager to contribute my skills as a developer to innovative
+          platforms and products.
+        </p>
+        <p>
+          My interests include photography, hiking, camping, fitness,
+          meditation, and drinking copious amounts of tea while reading science
+          fiction.{' '}
         </p>
       </div>
 
