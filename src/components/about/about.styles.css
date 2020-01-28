@@ -1,22 +1,28 @@
 .about {
   background-color: #f2f2f2;
-  color: white;
+  padding: 6vh;
+  padding-bottom: 10vh;
+  color: #3f3d56;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: flex-start;
   width: 100%;
-  justify-content: space-between;
   font-size: 1.5rem;
 }
-.paragraphs {
-  justify-content: flex-start;
-  max-width: 70%;
+
+.about h2 {
+  font-family: Lato;
+  color: #1469b8;
 }
 
-.about .logo-group {
+.logo-group {
+  padding: 5vh;
+  margin-bottom: 5vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  color: #1469b8;
+  width: 100%;
 }
 
 .about .fa-icon {

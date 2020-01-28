@@ -10,7 +10,7 @@ const About = () => {
   return (
     <div className="about">
       <h2>About Me</h2>
-      <div className="paragraphs">
+      <div className="paragraph-container">
         <p>
           After working in Sales for several years, my passion for problem
           solving and building useful things facilitated my journey into web
@@ -31,15 +31,14 @@ const About = () => {
           meditation, and drinking copious amounts of tea while reading science
           fiction.{' '}
         </p>
-      </div>
-
-      <div className="logo-group">
-        <FontAwesomeIcon icon={['fab', 'js']} className="fa-icon" />
-        <FontAwesomeIcon icon={['fab', 'node']} className="fa-icon" />
-        <FontAwesomeIcon icon={['fab', 'react']} className="fa-icon" />
-        {/* <JavascriptLogo className="javascript-logo" id="logo" />
+        <div className="logo-group">
+          <FontAwesomeIcon icon={['fab', 'js']} className="fa-icon" />
+          <FontAwesomeIcon icon={['fab', 'node']} className="fa-icon" />
+          <FontAwesomeIcon icon={['fab', 'react']} className="fa-icon" />
+          {/* <JavascriptLogo className="javascript-logo" id="logo" />
         <NodeLogo className="node-logo" id="logo" />
         <ReactLogo className="react-logo" id="logo" /> */}
+        </div>
       </div>
     </div>
   );
