@@ -31,15 +31,15 @@ class Contact extends React.Component {
   render() {
     return (
       <div className="contact">
-        <h1>Let's Connect</h1>
-
-        <form onSubmit={this.handleSubmit}>
+        <span> Let's Connect</span>
+        <form onSubmit={this.handleSubmit} className="form-inline">
           <FormInput
             name="Your Name"
             type="email"
             value={this.state.name}
             handleChange={this.handleChange}
             label="email"
+            className="form-input"
             required
           />
           <FormInput
@@ -48,6 +48,7 @@ class Contact extends React.Component {
             value={this.state.email}
             handleChange={this.handleChange}
             label="email"
+            className="form-input"
             required
           />
           <FormInput
@@ -56,12 +57,13 @@ class Contact extends React.Component {
             value={this.state.message}
             handleChange={this.handleChange}
             label="message"
+            className="form-input"
             required
           />
           <CustomButton type="submit">Submit</CustomButton>
         </form>
 
-        <span>
+        {/* <span>
           Github
           <FontAwesomeIcon icon={['fab', 'github']} />
         </span>
@@ -71,7 +73,7 @@ class Contact extends React.Component {
         </span>
         <span>Resume</span>
         <span>Calendar</span>
-        <span>Site by Johnny Kirpalani</span>
+        <span>Site by Johnny Kirpalani</span> */}
       </div>
     );
   }

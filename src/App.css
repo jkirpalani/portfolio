@@ -19,12 +19,12 @@ body::-webkit-scrollbar-thumb {
   outline: 1px solid black;
 }
 a {
-  color: #1469b8;
+  color: #0066ff;
   text-decoration: none;
   size: 16px;
   cursor: pointer;
 }
 
 a:hover {
-  color: #164a7b;
+  color: #51e5c4;
 }

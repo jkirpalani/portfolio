@@ -1,15 +1,24 @@
 .project-section {
+  padding-top: 7vh;
   height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   /* padding: 10% 0 10% 0; */
-  background-color: white;
+  background-color: #0066ff;
 }
 
 .card-container {
+  padding-top: 10vh;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+}
+
+.project-section h2 {
+  color: whitesmoke;
+  font-size: 1.75em;
+  font-weight: 200;
 }

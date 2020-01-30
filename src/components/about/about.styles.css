@@ -1,5 +1,5 @@
 .about {
-  background-color: #f2f2f2;
+  background-color: #f5f5f5;
   padding: 6vh;
   padding-bottom: 10vh;
   color: #3f3d56;
@@ -12,19 +12,29 @@
 }
 
 .about h2 {
-  font-family: Lato;
-  color: #1469b8;
+  font-size: 1.75em;
+  font-weight: 200;
+  color: #0066ff;
 }
 
 .logo-group {
   padding: 5vh;
   margin-bottom: 5vh;
   display: flex;
-  justify-content: space-evenly;
-  color: #1469b8;
+  justify-content: center;
+  color: #0066ff;
   width: 100%;
 }
 
 .about .fa-icon {
-  font-size: 5rem;
+  font-size: 7rem;
+  padding: 2vh;
+}
+
+.paragraph-container {
+  line-height: 1.6;
+}
+
+.option-icon {
+  margin-right: 0.5vw;
 }

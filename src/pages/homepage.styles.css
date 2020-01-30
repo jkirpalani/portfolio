@@ -7,27 +7,27 @@
 .hero-h1 {
   font-size: 3.4em;
   font-weight: 200;
+  margin: 2vh 0 2vh 0;
 }
 
 .hero-h2 {
-  font-size: 2.2em;
+  font-size: 2.1em;
   font-weight: 200;
+  margin: 2vh 0 2vh 0;
 }
 
 .hero-h3 {
-  font-size: 1.8em;
+  font-size: 2.1em;
   font-weight: 200;
+  margin: 2vh 0 2vh 0;
 }
 
 .left-content-hero {
-  margin-top: 10vh;
-  margin-left: 7vh;
-  height: 40%;
+  /* margin-top: 10vh; */
+  margin-left: 6vh;
+  height: 30%;
   display: flex;
   flex-direction: column;
-  justify-self: center;
-  flex-direction: column;
-  justify-content: space-evenly;
 }
 
 .background-image {
@@ -35,10 +35,10 @@
   max-height: 70%;
   width: auto;
   background-repeat: no-repeat;
-  margin-top: 10vh;
+  margin-top: 15vh;
 }
 
-button.homepage-projects-button {
+/* button.homepage-projects-button {
   padding: 0.6em 2em;
   border-radius: 16px;
   color: #fff;
@@ -47,10 +47,10 @@ button.homepage-projects-button {
   border: 0;
   cursor: pointer;
   margin: 1em;
-}
+} */
 
 .highlight {
-  color: #ff6584;
+  color: #0066ff;
 }
 
 .fa-icon {

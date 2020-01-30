@@ -7,15 +7,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Homepage = () => (
   <div className="homepage">
     <div className="left-content-hero">
-      <h2 className="hero-h2">Hello.</h2>
+      <h2 className="hero-h2">Hello 👋</h2>
 
       <h1 className="hero-h1">
-        My Name Is <span className="highlight">Johnny Kirpalani</span>.
+        My Name Is <span className="highlight">Johnny Kirpalani</span>
       </h1>
-      <h2 className="hero-h3">
+      <h3 className="hero-h3">
         I'm a <span className="highlight">Full Stack Software Engineer </span>
-        From NYC.
-      </h2>
+        From NYC
+      </h3>
       <div className="link-and-button-container">
         <CustomButton>
           Explore My Projects

@@ -9,7 +9,10 @@ import './about.styles.css';
 const About = () => {
   return (
     <div className="about">
-      <h2>About Me</h2>
+      <h2>
+        <FontAwesomeIcon icon="user-astronaut" className="option-icon" /> ABOUT
+        ME
+      </h2>
       <div className="paragraph-container">
         <p>
           After working in Sales for several years, my passion for problem

@@ -7,7 +7,7 @@ import macbook from '../../assets/images/img_macbook.png';
 const Projects = () => {
   return (
     <div className="project-section">
-      <h2>Projects</h2>
+      <h2>PROJECTS</h2>
       <div className="card-container">
         <Card image={iphone} projectName="Event Hive" />
         <Card image={macbook} projectName="Dress Me" />
