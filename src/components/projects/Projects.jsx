@@ -3,11 +3,15 @@ import Card from '../card/Card';
 import './project.styles.css';
 import iphone from '../../assets/images/img_iphone.png';
 import macbook from '../../assets/images/img_macbook.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Projects = () => {
   return (
     <div className="project-section">
-      <h2>PROJECTS</h2>
+      <h2>
+        <FontAwesomeIcon icon="wrench" className="option-icon" />
+        PROJECTS
+      </h2>
       <div className="card-container">
         <Card image={iphone} projectName="Event Hive" />
         <Card image={macbook} projectName="Dress Me" />

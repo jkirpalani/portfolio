@@ -12,13 +12,14 @@
 }
 
 .about h2 {
+  padding: 1vh 0 6vh 0;
   font-size: 1.75em;
   font-weight: 200;
   color: #0066ff;
 }
 
 .logo-group {
-  padding: 5vh;
+  padding: 10vh 0;
   margin-bottom: 5vh;
   display: flex;
   justify-content: center;

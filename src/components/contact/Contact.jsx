@@ -2,6 +2,7 @@ import React from 'react';
 import FormInput from '../form-input/form-input';
 import CustomButton from '../custom-button/custom-button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import contactImage from '../../assets/images/img_contact-section.jpg';
 
 // import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
@@ -30,33 +31,36 @@ class Contact extends React.Component {
 
   render() {
     return (
-      <div className="contact">
-        <span> Let's Connect</span>
+      <div
+        className="contact"
+        style={{ backgroundImage: `url(${contactImage})` }}
+      >
+        <h2> Let's Connect </h2>
         <form onSubmit={this.handleSubmit} className="form-inline">
           <FormInput
-            name="Your Name"
+            name="name"
             type="email"
             value={this.state.name}
             handleChange={this.handleChange}
-            label="email"
+            label="Your Name"
             className="form-input"
             required
           />
           <FormInput
-            name="Your Email"
+            name="email"
             type="email"
             value={this.state.email}
             handleChange={this.handleChange}
-            label="email"
+            label="Your Email Address"
             className="form-input"
             required
           />
           <FormInput
-            name="Your Message"
+            name="message"
             type="text"
             value={this.state.message}
             handleChange={this.handleChange}
-            label="message"
+            label="Your Message"
             className="form-input"
             required
           />

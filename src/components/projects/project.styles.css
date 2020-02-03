@@ -18,7 +18,8 @@
 }
 
 .project-section h2 {
-  color: whitesmoke;
+  padding: 1vh 0 6vh 0;
   font-size: 1.75em;
   font-weight: 200;
+  color: whitesmoke;
 }

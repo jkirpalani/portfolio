@@ -31,22 +31,20 @@
       transition: 0.5s;
     }
 
+    .option:hover {
+      padding: 10px 15px;
+      color: #51e5c4;
+      transition: 0.5s;
+    }
+
     .nav-icon {
-      margin-left: 10px;
+      margin-left: 15px;
       margin-right: 10px;
       transition: 0.5s;
     }
 
-    .option-icon {
-      margin-right: 5px;
-      color: #0066ff;
-      transition: 0.5s;
-    }
-
-    .option:hover,
-    .option-icon:hover,
-    .nav-icon:hover {
-      color: #51e5c4;
+    .option-separator {
+      color: lightgray;
     }
   }
 }

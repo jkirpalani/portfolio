@@ -1,16 +1,24 @@
 .contact {
   display: flex;
+  flex-direction: column;
   color: whitesmoke;
   background-color: #3f3d55;
   width: 100%;
-  justify-content: flex-start;
+  height: 70vh;
+  justify-content: center;
   align-items: space-around;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .form-inline {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column;
+  /* flex-flow: row wrap; */
+  justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .form-inline label {
@@ -36,7 +44,7 @@
   background-color: royalblue;
 }
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
   .form-inline input {
     margin: 10px 0;
   }
@@ -45,4 +53,4 @@
     flex-direction: column;
     align-items: stretch;
   }
-}
+} */

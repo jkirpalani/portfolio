@@ -11,30 +11,26 @@ const Header = () => (
       JK
     </Link>
     <div className="options">
-      <Link className="option" to="/#project-section">
-        <span>
-          <FontAwesomeIcon icon="wrench" className="option-icon" /> PROJECTS
-        </span>
-      </Link>
-
       <Link className="option" to="/#about">
-        <span>
-          <FontAwesomeIcon icon="user-astronaut" className="option-icon" />{' '}
-          ABOUT
-        </span>
+        <FontAwesomeIcon icon="user-astronaut" className="option-icon" />
+        ABOUT
       </Link>
-      <Link className="option" to="/#contact">
-        <span>
-          <FontAwesomeIcon icon="paper-plane" className="option-icon" /> CONTACT
-        </span>
+      <Link className="option" to="/#project-section">
+        <FontAwesomeIcon icon="wrench" className="option-icon" />
+        PROJECTS
       </Link>
 
-      <div>|</div>
-      <a href className="icon" to="">
-        <FontAwesomeIcon icon={['fab', 'github']} className="nav-icon" />
+      <Link className="option" to="/#contact">
+        <FontAwesomeIcon icon="paper-plane" className="option-icon" />
+        CONTACT
+      </Link>
+
+      <div className="option-separator">|</div>
+      <a href className="nav-icon" to="">
+        <FontAwesomeIcon icon={['fab', 'github']} />
       </a>
-      <a href className="icon" to="">
-        <FontAwesomeIcon icon={['fab', 'linkedin']} className="nav-icon" />
+      <a href className="nav-icon" to="">
+        <FontAwesomeIcon icon={['fab', 'linkedin']} />
       </a>
     </div>
   </div>
