@@ -3,6 +3,7 @@ import FormInput from '../form-input/form-input';
 import CustomButton from '../custom-button/custom-button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import contactImage from '../../assets/images/img_contact-section.jpg';
+import Footer from '../footer/Footer';
 
 // import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
@@ -35,49 +36,43 @@ class Contact extends React.Component {
         className="contact"
         style={{ backgroundImage: `url(${contactImage})` }}
       >
-        <h2> Let's Connect </h2>
-        <form onSubmit={this.handleSubmit} className="form-inline">
-          <FormInput
-            name="name"
-            type="email"
-            value={this.state.name}
-            handleChange={this.handleChange}
-            label="Your Name"
-            className="form-input"
-            required
-          />
-          <FormInput
-            name="email"
-            type="email"
-            value={this.state.email}
-            handleChange={this.handleChange}
-            label="Your Email Address"
-            className="form-input"
-            required
-          />
-          <FormInput
-            name="message"
-            type="text"
-            value={this.state.message}
-            handleChange={this.handleChange}
-            label="Your Message"
-            className="form-input"
-            required
-          />
-          <CustomButton type="submit">Submit</CustomButton>
-        </form>
-
-        {/* <span>
-          Github
-          <FontAwesomeIcon icon={['fab', 'github']} />
-        </span>
-        <span>
-          LinkedIn
-          <FontAwesomeIcon icon={['fab', 'linkedin']} />
-        </span>
-        <span>Resume</span>
-        <span>Calendar</span>
-        <span>Site by Johnny Kirpalani</span> */}
+        <h2>
+          <FontAwesomeIcon icon="paper-plane" className="option-icon" />
+          LET'S CONNECT
+        </h2>
+        <div className="form-container">
+          <form onSubmit={this.handleSubmit} className="form-inline">
+            <FormInput
+              name="name"
+              type="email"
+              value={this.state.name}
+              handleChange={this.handleChange}
+              label="Your Name"
+              className="form-input"
+              required
+            />
+            <FormInput
+              name="email"
+              type="email"
+              value={this.state.email}
+              handleChange={this.handleChange}
+              label="Your Email Address"
+              className="form-input"
+              required
+            />
+            <FormInput
+              name="message"
+              type="text"
+              value={this.state.message}
+              handleChange={this.handleChange}
+              label="Your Message"
+              className="form-input form-input-message"
+              required
+            />
+            <CustomButton type="submit">Submit</CustomButton>
+          </form>
+        </div>
+        <Footer />
       </div>
     );
   }

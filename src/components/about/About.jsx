@@ -1,19 +1,18 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 // import { ReactComponent as JavascriptLogo } from '../../assets/images/icon_javascript.svg';
 // import { ReactComponent as ReactLogo } from '../../assets/images/icon_react.svg';
 // import { ReactComponent as NodeLogo } from '../../assets/images/icon_node.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import './about.styles.css';
 
-const About = () => {
+const About = React.forwardRef((props, ref) => {
   return (
     <div className="about">
-      <h2>
+      <h2 className="fadeIn">
         <FontAwesomeIcon icon="user-astronaut" className="option-icon" /> ABOUT
         ME
       </h2>
-      <div className="paragraph-container">
+      <div ref={ref} className="paragraph-container fadeIn">
         <p>
           After working in Sales for several years, my passion for problem
           solving and building useful things facilitated my journey into web
@@ -34,7 +33,8 @@ const About = () => {
           meditation, and drinking copious amounts of tea while reading science
           fiction.{' '}
         </p>
-        <div className="logo-group">
+        :P
+        <div className="logo-group fadeIn">
           <FontAwesomeIcon icon={['fab', 'js']} className="fa-icon" />
           <FontAwesomeIcon icon={['fab', 'node']} className="fa-icon" />
           <FontAwesomeIcon icon={['fab', 'react']} className="fa-icon" />
@@ -45,6 +45,6 @@ const About = () => {
       </div>
     </div>
   );
-};
+});
 
 export default About;

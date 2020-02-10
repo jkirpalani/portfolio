@@ -18,10 +18,9 @@ $main-color: black;
     display: block;
     border: none;
     border-radius: 0;
-    border-bottom: 1px solid $sub-color;
-    width: 100%;
+    border: 1px solid #52e4c4;
+    width: 30vw;
     height: 100%;
-    // margin: 25px 0;
 
     &:focus {
       outline: none;
@@ -30,6 +29,10 @@ $main-color: black;
     &:focus ~ .form-input-label {
       @include shrinkLabel();
     }
+  }
+
+  .form-input-message {
+    height: 20vh;
   }
 
   input[type='password'] {
