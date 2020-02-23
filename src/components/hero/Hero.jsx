@@ -1,12 +1,12 @@
-import React, { useRef } from 'react';
+import React, { forwardRef } from 'react';
 import './hero.styles.css';
 import CustomButton from '../custom-button/custom-button';
 import HeroImg from '../../assets/images/img_hero.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Hero = React.forwardRef((props, ref) => {
+const Hero = forwardRef((props, ref) => {
   return (
-    <div className="hero">
+    <div className="hero" ref={ref}>
       <div className="left-content-hero">
         <h2 className="hero-h2">
           Hello <span>🖖</span>
