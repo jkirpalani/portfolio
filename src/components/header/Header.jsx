@@ -1,38 +1,87 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, animateScroll as scroll } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { ReactComponent as Logo } from '../../assets/logo.png';
-import './header.styles.scss';
+import './header.styles.css';
 
-const Header = () => {
+const Header = ({ appendClass }) => {
+  console.log('is append true', appendClass);
+
   return (
-    <div className="header">
-      <Link className="logo-container" to="/">
-        JK
-      </Link>
-      <div className="options">
-        <Link className="option" to="/#about">
-          <FontAwesomeIcon icon="user-astronaut" className="option-icon" />
-          ABOUT
+    <div className={`header${appendClass ? ' nav-scrolled' : ''}`}>
+      <h1 className="logo">
+        <Link
+          activeClass="active"
+          to="hero"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
+          JK
         </Link>
-        <Link className="option" to="/#project-section">
-          <FontAwesomeIcon icon="wrench" className="option-icon" />
-          PROJECTS
-        </Link>
+      </h1>
+      <input type="checkbox" id="nav-toggle" className="nav-toggle"></input>
+      <nav>
+        <ul>
+          <li>
+            <Link
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              <FontAwesomeIcon icon="user-astronaut" className="option-icon" />
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              activeClass="active"
+              to="project-section"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              <FontAwesomeIcon icon="wrench" className="option-icon" />
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              <FontAwesomeIcon icon="paper-plane" className="option-icon" />
+              Contact Me
+            </Link>
+          </li>
+          <li>
+            <div className="option-separator">|</div>
+          </li>
 
-        <Link className="option" to="/#contact">
-          <FontAwesomeIcon icon="paper-plane" className="option-icon" />
-          CONTACT
-        </Link>
+          <li>
+            <a href className="nav-icon" to="">
+              <FontAwesomeIcon icon={['fab', 'github']} />
+            </a>
+          </li>
 
-        <div className="option-separator">|</div>
-        <a href className="nav-icon" to="">
-          <FontAwesomeIcon icon={['fab', 'github']} />
-        </a>
-        <a href className="nav-icon" to="">
-          <FontAwesomeIcon icon={['fab', 'linkedin']} />
-        </a>
-      </div>
+          <li>
+            <a href className="nav-icon" to="">
+              <FontAwesomeIcon icon={['fab', 'linkedin']} />
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" className="nav-toggle-label">
+        <span></span>
+      </label>
     </div>
   );
 };

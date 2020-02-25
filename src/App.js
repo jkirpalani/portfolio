@@ -6,28 +6,34 @@ import About from './components/about/About';
 import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
 import Header from './components/header/Header';
+// import Header from './components/header2/Header2';
 
 const App = () => {
-  const [isAppearing, setIsAppearing] = React.useState(false);
+  const [appendClass, setAppendClass] = React.useState(false);
+
   const elementToObserveRef = React.useRef();
 
   React.useEffect(() => {
-    const observer = new IntersectionObserver(entries => {
-      if (entries[0].isIntersecting) {
-        console.log(entries[0]);
-        setIsAppearing(true);
+    const observerOptions = {
+      rootMargin: '-550px 0px 0px 0px',
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      if (!entries[0].isIntersecting) {
+        setAppendClass(true);
+        console.log('not intersecting', elementToObserveRef.current);
       } else {
-        console.log('NOT intersecting');
-        setIsAppearing(false);
+        setAppendClass(false);
+        console.log('intersecting', elementToObserveRef.current);
       }
-    });
+    }, observerOptions);
     observer.observe(elementToObserveRef.current);
     return () => observer.disconnect(); // cleanup
   }, []);
 
   return (
     <div>
-      <Header />
+      <Header appendClass={appendClass} />
       <Hero ref={elementToObserveRef} />
       <About />
       <Projects />
