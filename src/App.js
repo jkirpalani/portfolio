@@ -5,12 +5,13 @@ import Hero from './components/hero/Hero';
 import About from './components/about/About';
 import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
-import Header from './components/header/Header';
-// import Header from './components/header2/Header2';
+import Navbar from './components/Navbar/Navbar';
+import SideDrawer from './components/SideDrawer/SideDrawer';
+import Backdrop from './components/Backdrop/Backdrop';
 
 const App = () => {
   const [appendClass, setAppendClass] = React.useState(false);
-
+  const [sideDrawerOpen, setSideDrawerOpen] = React.useState(false);
   const elementToObserveRef = React.useRef();
 
   React.useEffect(() => {
@@ -27,13 +28,33 @@ const App = () => {
         console.log('intersecting', elementToObserveRef.current);
       }
     }, observerOptions);
+
     observer.observe(elementToObserveRef.current);
     return () => observer.disconnect(); // cleanup
   }, []);
 
+  const drawerToggleClickHander = () => {
+    return setSideDrawerOpen(!sideDrawerOpen);
+  };
+
+  const backdropClickHandler = () => {
+    return setSideDrawerOpen(false);
+  };
+
+  let backdrop;
+
+  if (sideDrawerOpen) {
+    backdrop = <Backdrop click={backdropClickHandler} />;
+  }
+
   return (
     <div>
-      <Header appendClass={appendClass} />
+      <Navbar
+        drawerClickHander={drawerToggleClickHander}
+        appendClass={appendClass}
+      />
+      <SideDrawer show={sideDrawerOpen} />
+      {backdrop}
       <Hero ref={elementToObserveRef} />
       <About />
       <Projects />
