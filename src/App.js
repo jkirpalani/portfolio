@@ -33,12 +33,22 @@ const App = () => {
     return () => observer.disconnect(); // cleanup
   }, []);
 
+  //make dry
+
   const drawerToggleClickHander = () => {
     return setSideDrawerOpen(!sideDrawerOpen);
   };
 
+  const closeSideDrawer = () => {
+    setSideDrawerOpen(false);
+  };
+
   const backdropClickHandler = () => {
     return setSideDrawerOpen(false);
+  };
+
+  const sideDrawerClickHandler = () => {
+    return setSideDrawerOpen(!sideDrawerOpen);
   };
 
   let backdrop;
@@ -53,7 +63,11 @@ const App = () => {
         drawerClickHander={drawerToggleClickHander}
         appendClass={appendClass}
       />
-      <SideDrawer show={sideDrawerOpen} />
+      <SideDrawer
+        show={sideDrawerOpen}
+        close={sideDrawerClickHandler}
+        click={closeSideDrawer}
+      />
       {backdrop}
       <Hero ref={elementToObserveRef} />
       <About />

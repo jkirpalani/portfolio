@@ -1,11 +1,11 @@
 .side-drawer {
   height: 100vh;
-  background: rgba(0, 214, 170, 0.9);
+  background: RGBA(255, 101, 132, 0.95);
   box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
   left: 0;
-  max-width: 100%;
+  /* max-width: 70%; */
   width: 100%;
   z-index: 200;
   transform: translateX(-100%);
@@ -16,7 +16,7 @@
   transform: translateX(0);
 }
 
-.navbar-logo {
+.side-drawer .navbar-logo {
   display: flex;
   justify-content: center;
   padding-top: 5vh;
@@ -32,19 +32,32 @@
   height: 100%;
 }
 
+.side-drawer-links {
+  margin-top: 10em;
+}
+
+.side-drawer-icon-container > ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.side-drawer-icon-container li {
+  padding: 0 0.75em;
+}
+
 .side-drawer li {
   margin: 0.5rem 0;
 }
 
 .side-drawer a {
-  color: blue;
+  color: white;
   text-decoration: none;
   font-size: 2rem;
 }
 
 .side-drawer a:hover,
 .side-drawer a:active {
-  color: blue;
+  color: rgba(0, 214, 170, 0.85);
   text-decoration: none;
   font-size: 2rem;
 }
