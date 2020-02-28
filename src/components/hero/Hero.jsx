@@ -7,41 +7,43 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Hero = forwardRef((props, ref) => {
   return (
     <div className="hero" ref={ref}>
-      <div className="left-content-hero">
-        <h2 className="hero-h2">
-          Hello <span>🖖</span>
-        </h2>
+      <div className="left-content-hero" id="grid-item-1">
+        <img
+          src={HeroImg}
+          ref={ref}
+          className="background-image"
+          id="grid-item-2"
+          alt="spaceship"
+        />
+        <header className="hero-header">
+          <h1 className="hero-h1">
+            Hi, I'm <span className="highlight">Johnny Kirpalani</span>
+          </h1>
 
-        <h1 className="hero-h1">
-          My Name Is <span className="highlight">Johnny Kirpalani</span>
-        </h1>
-        <h3 className="hero-h3">
-          I'm a <span className="highlight">Full Stack Software Engineer </span>
-          From NYC
-        </h3>
+          <h2 className="hero-h2">
+            I'm a{' '}
+            <span className="highlight">Full Stack Software Engineer</span> From
+            NYC
+          </h2>
+        </header>
+
         <div className="link-and-button-container">
-          <CustomButton>
-            Explore My Projects
+          <CustomButton id="hero-projects-button">
+            View Projects
             <span>
               {'  '}
               <FontAwesomeIcon icon="rocket" className="fa-icon" />
             </span>
           </CustomButton>
-          <a href src="" className="resume-link" pulse>
-            View My Resume
+          <CustomButton id="hero-resume-button">
+            View Resume
             <span>
               {'  '}
-              <FontAwesomeIcon icon="file" className="fa-icon" />
+              <FontAwesomeIcon icon="rocket" className="fa-icon" />
             </span>
-          </a>
+          </CustomButton>
         </div>
       </div>
-
-      <div
-        ref={ref}
-        className="background-image"
-        style={{ backgroundImage: `url(${HeroImg})` }}
-      ></div>
     </div>
   );
 });
