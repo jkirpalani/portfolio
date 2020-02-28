@@ -1,8 +1,8 @@
 import React from 'react';
-import './custom-button.styles.css';
+import './custom-button.styles.scss';
 
 const CustomButton = ({ children, ...otherProps }) => (
-  <button className="custom-button" {...otherProps}>
+  <button className="custom-button fancy-button bg-gradient1" {...otherProps}>
     {children}
   </button>
 );

@@ -1,7 +1,9 @@
 body {
   font-family: 'Raleway', sans-serif;
-  background-color: white;
-  color: #3f3d54;
+  /* background-color: #66fcf1; */
+  background-color: #4056a1;
+
+  color: #fff;
 }
 
 body::-webkit-scrollbar {
@@ -27,4 +29,13 @@ a {
 
 a:hover {
   color: #51e5c4;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
 }

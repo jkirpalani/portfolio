@@ -29,16 +29,14 @@ const Hero = forwardRef((props, ref) => {
 
         <div className="link-and-button-container">
           <CustomButton id="hero-projects-button">
-            View Projects
             <span>
-              {'  '}
+              Projects
               <FontAwesomeIcon icon="rocket" className="fa-icon" />
             </span>
           </CustomButton>
           <CustomButton id="hero-resume-button">
-            View Resume
             <span>
-              {'  '}
+              Resume
               <FontAwesomeIcon icon="rocket" className="fa-icon" />
             </span>
           </CustomButton>

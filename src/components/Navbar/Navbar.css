@@ -7,10 +7,11 @@
 }
 
 .navbar {
-  --text: #0066ff;
+  --text: white;
   --secondary-text: rgba(0, 214, 170, 0.85);
   --text-inverse: #333;
   --background: transparent;
+  /* size: 30px; */
   width: 100%;
   top: 0;
   left: 0;
@@ -18,6 +19,12 @@
   background: var(--background);
   height: 56px;
   z-index: 200;
+}
+
+.navbar a {
+  font-family: Montserrat;
+  text-transform: uppercase;
+  font-size: 1.25rem;
 }
 
 .navbar-navigation {
