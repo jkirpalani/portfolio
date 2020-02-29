@@ -24,16 +24,18 @@ const About = React.forwardRef((props, ref) => {
           Program, where I cultivated my technical and collaborative skills
           through building full stack projects using Agile methodologies.
         </p>
+        <br />
         <p>
           I am eager to contribute my skills as a developer to innovative
           platforms and products.
         </p>
+        <br />
         <p>
           My interests include photography, hiking, camping, fitness,
           meditation, and drinking copious amounts of tea while reading science
-          fiction.{' '}
+          fiction.
         </p>
-        :P
+
         <div className="logo-group fadeIn">
           <FontAwesomeIcon icon={['fab', 'js']} className="fa-icon" />
           <FontAwesomeIcon icon={['fab', 'node']} className="fa-icon" />

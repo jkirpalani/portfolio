@@ -14,8 +14,8 @@ const Projects = () => {
       </h2>
       <div className="card-container">
         <Card image={iphone} projectName="Event Hive" />
-        <Card image={macbook} projectName="Dress Me" />
-        <Card image={macbook} projectName="Dress Me" />
+        <Card image={iphone} projectName="Dress Me" />
+        <Card image={iphone} projectName="Dress Me" />
       </div>
     </div>
   );
