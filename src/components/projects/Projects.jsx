@@ -1,5 +1,7 @@
 import React from 'react';
-import Card from '../card/Card';
+// import Card from '../card/Card';
+import Card2 from '../card/Card2';
+
 import './project.styles.css';
 import iphone from '../../assets/images/img_iphone.png';
 import macbook from '../../assets/images/img_macbook.png';
@@ -13,9 +15,10 @@ const Projects = () => {
         PROJECTS
       </h2>
       <div className="card-container">
-        <Card image={iphone} projectName="Event Hive" />
+        <Card2 />
+        {/* <Card image={iphone} projectName="Event Hive" />
         <Card image={iphone} projectName="Dress Me" />
-        <Card image={iphone} projectName="Dress Me" />
+        <Card image={iphone} projectName="Dress Me" /> */}
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import './hero.styles.css';
+import './hero.styles.scss';
 import CustomButton from '../custom-button/custom-button';
 import HeroImg from '../../assets/images/img_hero.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

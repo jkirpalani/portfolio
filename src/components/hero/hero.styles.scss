@@ -1,11 +1,21 @@
+$color-primary-light: rgb(9, 207, 241);
+$color-primary-dark: #1b66d8;
+
 .hero {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   height: 100vh;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary-light,
+    $color-primary-dark
+  );
 }
-
+.custom-button {
+  z-index: 100;
+}
 .left-content-hero {
   display: flex;
   flex-direction: column;
