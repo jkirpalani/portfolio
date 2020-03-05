@@ -1,5 +1,4 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
 import './App.css';
 import Hero from './components/hero/Hero';
 import About from './components/about/About';
@@ -8,6 +7,7 @@ import Contact from './components/contact/Contact';
 import Navbar from './components/Navbar/Navbar';
 import SideDrawer from './components/SideDrawer/SideDrawer';
 import Backdrop from './components/Backdrop/Backdrop';
+import Footer from './components/footer/Footer';
 
 const App = () => {
   const [appendClass, setAppendClass] = React.useState(false);
@@ -73,6 +73,7 @@ const App = () => {
       <About />
       <Projects />
       <Contact />
+      <Footer />
     </div>
   );
 };

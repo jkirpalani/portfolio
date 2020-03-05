@@ -68,18 +68,19 @@
   color: var(--secondary-text);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .navbar-navigation-items {
     display: none;
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 577px) {
   .navbar.nav-scrolled {
     --text: white;
     --secondary-text: #0066ff;
     /* --text-inverse: #f4f4f4; */
-    --background: rgba(0, 214, 170, 0.85);
+    /* --background: rgba(0, 214, 170, 0.85); */
+    background-image: linear-gradient(to right, #1b66d8, rgb(9, 207, 241));
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
   }
 

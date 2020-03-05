@@ -1,8 +1,15 @@
+$color-primary-light: #434769;
+$color-primary-dark: rgb(61, 58, 58);
+
 .about {
-  background-color: #fff;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary-light,
+    $color-primary-dark
+  );
   padding: 6vh;
   padding-bottom: 10vh;
-  color: #3f3d56;
+  color: white;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -15,7 +22,7 @@
   padding: 3vh 0 10vh 0;
   font-size: 1.4em;
   font-weight: 200;
-  color: #0066ff;
+  color: #089fe6;
 }
 
 .about p {
@@ -28,7 +35,7 @@
   font-size: 1rem;
   display: flex;
   justify-content: center;
-  color: #0066ff;
+  color: #089fe6;
   width: 100%;
 }
 

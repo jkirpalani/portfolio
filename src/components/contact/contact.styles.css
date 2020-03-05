@@ -1,10 +1,9 @@
 .contact {
   display: flex;
   flex-direction: column;
-  color: whitesmoke;
-  background-color: #3f3d55;
+  color: #0ee2df;
   width: 100%;
-  height: 70vh;
+  height: 100vh;
   justify-content: center;
   align-items: center;
   background-size: cover;
@@ -12,11 +11,25 @@
   background-position: bottom;
 }
 
+.form-box {
+  background-image: linear-gradient(
+    to right,
+    #1b67d8a4,
+    rgba(9, 206, 241, 0.637)
+  );
+  width: 40%;
+  height: 60%;
+}
+
 .contact h2 {
-  color: #52e4c4;
-  display: flex;
-  justify-content: center;
-  font-size: 2.1em;
+  color: white;
+  background-image: linear-gradient(to right, #1b66d8, rgb(9, 207, 241));
+  padding: 0.5em;
+  margin-bottom: 1em;
+  /* display: flex; */
+  /* justify-content: flex-start; */
+  align-self: center;
+  /* font-size: 2.1em; */
   font-weight: 100;
 }
 
@@ -36,30 +49,6 @@
   vertical-align: middle;
   margin: 5px 10px 5px 0;
   padding: 10px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-}
-
-.form-inline button {
-  display: flex;
-  align-self: flex-start;
-  padding: 10px 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 20px 20px 20px 20px;
-  border: 1px solid #52e4c4;
-  color: white;
-  margin-top: 1vh;
-}
-
-.form-inline button:hover {
-  display: flex;
-  align-self: flex-start;
-  padding: 10px 20px;
-  background-color: #52e4c4;
-  border-radius: 14px 14px 14px 14px;
-  border: 1px solid #ddd;
-  color: black;
-  margin-top: 1vh;
 }
 
 .form-container {
@@ -68,13 +57,18 @@
   justify-content: center;
   align-items: center;
 }
-/* @media (max-width: 800px) {
-  .form-inline input {
-    margin: 10px 0;
-  }
 
-  .form-inline {
-    flex-direction: column;
-    align-items: stretch;
+.contact-image {
+  background-color: #355ee2;
+  background-blend-mode: lighten;
+}
+
+.custom-button {
+  z-index: 200;
+}
+@media only screen and (max-width: 576px) {
+  .form-box {
+    width: 80vw;
+    height: 70vh;
   }
-} */
+}

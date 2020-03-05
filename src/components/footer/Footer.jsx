@@ -1,11 +1,10 @@
 import React from 'react';
 import './footer.styles.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Footer = () => {
   return (
     <div className="footer">
-      <span>Site by Johnny Kirpalani </span>
+      <span>Designed and Developed by Johnny Kirpalani | 2020</span>
     </div>
   );
 };

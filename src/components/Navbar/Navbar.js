@@ -37,10 +37,6 @@ const Navbar = ({ drawerClickHander, appendClass }) => {
                 offset={-70}
                 duration={500}
               >
-                <FontAwesomeIcon
-                  icon="user-astronaut"
-                  className="option-icon"
-                />
                 About
               </Link>
             </li>
@@ -53,7 +49,6 @@ const Navbar = ({ drawerClickHander, appendClass }) => {
                 offset={-70}
                 duration={500}
               >
-                <FontAwesomeIcon icon="wrench" className="option-icon" />
                 Projects
               </Link>
             </li>
@@ -66,7 +61,6 @@ const Navbar = ({ drawerClickHander, appendClass }) => {
                 offset={-70}
                 duration={500}
               >
-                <FontAwesomeIcon icon="paper-plane" className="option-icon" />
                 Contact Me
               </Link>
             </li>

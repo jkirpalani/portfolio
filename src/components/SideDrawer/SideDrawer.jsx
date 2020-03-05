@@ -1,8 +1,6 @@
 import React from 'react';
-import CloserDrawerButtom from './CloseDrawerButton';
 import { Link, animateScroll as scroll } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import './Sidedrawer.styles.css';
 import CloseDrawerButton from './CloseDrawerButton';
 

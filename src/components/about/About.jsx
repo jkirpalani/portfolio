@@ -1,9 +1,9 @@
-import React, { useRef, useEffect } from 'react';
+import React from 'react';
 // import { ReactComponent as JavascriptLogo } from '../../assets/images/icon_javascript.svg';
 // import { ReactComponent as ReactLogo } from '../../assets/images/icon_react.svg';
 // import { ReactComponent as NodeLogo } from '../../assets/images/icon_node.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import './about.styles.css';
+import './about.styles.scss';
 
 const About = React.forwardRef((props, ref) => {
   return (
