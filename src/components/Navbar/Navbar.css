@@ -18,7 +18,7 @@
   position: fixed;
   background: var(--background);
   height: 56px;
-  z-index: 200;
+  z-index: 201;
 }
 
 .navbar a {
@@ -64,6 +64,7 @@
 }
 
 .navbar-navigation-items a:hover,
+.navbar-navigation-items a:focus,
 .navbar-navigation-items a:active {
   color: var(--secondary-text);
 }
@@ -86,9 +87,5 @@
 
   .navbar-toggle-button {
     display: none;
-  }
-
-  .navbar-logo {
-    margin-left: 0;
   }
 }

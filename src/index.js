@@ -11,6 +11,7 @@ import {
   faEnvelope,
   faRocket,
   faFile,
+  faHeart,
 } from '@fortawesome/free-solid-svg-icons';
 import App from './App';
 
@@ -24,7 +25,8 @@ library.add(
   faFile,
   faReact,
   faJs,
-  faNode
+  faNode,
+  faHeart
 );
 
 ReactDOM.render(

@@ -3,18 +3,20 @@ import './hero.styles.scss';
 import CustomButton from '../custom-button/custom-button';
 import HeroImg from '../../assets/images/img_hero.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import HeroSVG from '../HeroSVG/HeroSVG';
 
 const Hero = forwardRef((props, ref) => {
   return (
     <div className="hero" ref={ref}>
       <div className="left-content-hero" id="grid-item-1">
-        <img
+        <HeroSVG />
+        {/* <img
           src={HeroImg}
           ref={ref}
           className="background-image"
           id="grid-item-2"
           alt="spaceship"
-        />
+        /> */}
         <header className="hero-header">
           <h1 className="hero-h1">
             Hi, I'm <span className="highlight">Johnny Kirpalani</span>
