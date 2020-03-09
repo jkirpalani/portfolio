@@ -1,39 +1,63 @@
-import React from 'react';
+import React, { useState } from 'react';
 import FormInput from '../form-input/form-input';
 import CustomButton from '../custom-button/custom-button';
+import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import contactImage1 from '../../assets/images/heic1808a.jpg';
-
-// import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-
 import './contact.styles.css';
 
-class Contact extends React.Component {
-  constructor(props) {
-    super(props);
+const Contact = props => {
+  const [formState, setFormState] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
 
-    this.state = {
-      name: '',
-      email: '',
-      message: '',
-    };
-  }
+  const [isVisible, setIsVisible] = useState(false);
 
-  handleSubmit = event => {
+  const handleSubmit = event => {
     event.preventDefault();
-    this.setState({ name: '', email: '', message: '' });
+    setFormState({ name: '', email: '', message: '' });
   };
 
-  handleChange = event => {
+  const handleChange = event => {
     const { value, name } = event.target;
-    this.setState({ [name]: value });
+    setFormState({ [name]: value });
   };
 
-  render() {
-    return (
+  const contactRef = React.useRef();
+  const variants = {
+    open: {
+      opacity: 1,
+    },
+    closed: { opacity: 0 },
+  };
+
+  React.useEffect(() => {
+    const contactObserverOptions = {
+      threshold: 0.3,
+    };
+
+    const contactObserver = new IntersectionObserver((entries, observer) => {
+      if (!entries[0].isIntersecting) {
+        setIsVisible(false);
+        console.log('intersecting', contactRef.current);
+      } else {
+        setIsVisible(true);
+        console.log('intersecting', contactRef.current);
+      }
+    }, contactObserverOptions);
+
+    contactObserver.observe(contactRef.current);
+    return () => contactObserver.disconnect(); // cleanup
+  }, []);
+
+  return (
+    <motion.div animate={isVisible ? 'open' : 'closed'} variants={variants}>
       <div
         className="contact contact-image"
         style={{ backgroundImage: `url(${contactImage1})` }}
+        ref={contactRef}
       >
         <div className="form-box">
           <h2>
@@ -41,12 +65,12 @@ class Contact extends React.Component {
             LET'S CONNECT
           </h2>
           <div className="form-container">
-            <form onSubmit={this.handleSubmit} className="form-inline">
+            <form onSubmit={handleSubmit} className="form-inline">
               <FormInput
                 name="name"
                 type="email"
-                value={this.state.name}
-                handleChange={this.handleChange}
+                value={formState.name}
+                handleChange={handleChange}
                 label="Your Name"
                 className="form-input"
                 required
@@ -54,8 +78,8 @@ class Contact extends React.Component {
               <FormInput
                 name="email"
                 type="email"
-                value={this.state.email}
-                handleChange={this.handleChange}
+                value={formState.email}
+                handleChange={handleChange}
                 label="Your Email Address"
                 className="form-input"
                 required
@@ -63,8 +87,8 @@ class Contact extends React.Component {
               <FormInput
                 name="message"
                 type="text"
-                value={this.state.message}
-                handleChange={this.handleChange}
+                value={formState.message}
+                handleChange={handleChange}
                 label="Your Message"
                 className="form-input form-input-message"
                 required
@@ -76,8 +100,8 @@ class Contact extends React.Component {
           </div>
         </div>
       </div>
-    );
-  }
-}
+    </motion.div>
+  );
+};
 
 export default Contact;

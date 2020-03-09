@@ -1,8 +1,8 @@
-import React, { forwardRef } from 'react';
+import React, { useState, forwardRef } from 'react';
 import './hero.styles.scss';
 import CustomButton from '../custom-button/custom-button';
-import HeroImg from '../../assets/images/img_hero.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { motion } from 'framer-motion';
 import HeroSVG from '../HeroSVG/HeroSVG';
 
 const Hero = forwardRef((props, ref) => {
@@ -10,13 +10,7 @@ const Hero = forwardRef((props, ref) => {
     <div className="hero" ref={ref}>
       <div className="left-content-hero" id="grid-item-1">
         <HeroSVG />
-        {/* <img
-          src={HeroImg}
-          ref={ref}
-          className="background-image"
-          id="grid-item-2"
-          alt="spaceship"
-        /> */}
+
         <header className="hero-header">
           <h1 className="hero-h1">
             Hi, I'm <span className="highlight">Johnny Kirpalani</span>
@@ -30,7 +24,7 @@ const Hero = forwardRef((props, ref) => {
         </header>
 
         <div className="link-and-button-container">
-          <CustomButton id="hero-projects-button">
+          <CustomButton id="hero-projects-button" to="project-section">
             <span>
               Projects
               <FontAwesomeIcon icon="rocket" className="fa-icon" />

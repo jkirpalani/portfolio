@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+
 import Card2 from '../card/Card2';
 import './project.styles.scss';
 
@@ -40,19 +42,47 @@ const Projects = () => {
     },
   ]);
 
+  const [isVisible, setIsVisible] = useState(false);
+  const projectsRef = React.useRef();
+
+  const variants = {
+    open: {
+      opacity: 1,
+    },
+    closed: { opacity: 0 },
+  };
+
+  React.useEffect(() => {
+    const projectObserverOptions = {
+      threshold: 0.3,
+    };
+
+    const projectObserver = new IntersectionObserver((entries, observer) => {
+      if (!entries[0].isIntersecting) {
+        setIsVisible(false);
+        console.log('intersecting', projectsRef.current);
+      } else {
+        setIsVisible(true);
+        console.log('intersecting', projectsRef.current);
+      }
+    }, projectObserverOptions);
+
+    projectObserver.observe(projectsRef.current);
+    return () => projectObserver.disconnect();
+  }, []);
+
   return (
-    <div className="project-section">
-      <h2>
-        <FontAwesomeIcon icon="wrench" className="option-icon" />
-        PROJECTS
-      </h2>
-      <div className="card-container">
-        <Card2 projects={projects} />
-        {/* <Card image={iphone} projectName="Event Hive" />
-        <Card image={iphone} projectName="Dress Me" />
-        <Card image={iphone} projectName="Dress Me" /> */}
+    <motion.div animate={isVisible ? 'open' : 'closed'} variants={variants}>
+      <div className="project-section" ref={projectsRef}>
+        <h2>
+          <FontAwesomeIcon icon="wrench" className="option-icon" />
+          PROJECTS
+        </h2>
+        <div className="card-container">
+          <Card2 projects={projects} />
+        </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default Projects;
