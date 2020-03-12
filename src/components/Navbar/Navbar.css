@@ -8,7 +8,7 @@
 
 .navbar {
   --text: white;
-  --secondary-text: rgba(0, 214, 170, 0.85);
+  --secondary-text: rgb(61, 58, 58);
   --text-inverse: #333;
   --background: transparent;
   /* size: 30px; */
@@ -61,11 +61,30 @@
 
 .navbar-navigation-items a {
   color: var(--text);
+  position: relative;
+  transition: color 250ms;
+}
+
+.navbar-navigation-items a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background: var(--secondary-text);
+  position: absolute;
+  top: 1.25em;
+  left: 0;
+  right: 0;
+  transform: scale(0, 1);
+  transition: transform ease-in-out 250ms;
+}
+
+.navbar-navigation-items a:hover::after {
+  transform: scale(1, 1);
 }
 
 .navbar-navigation-items a:hover,
 .navbar-navigation-items a:focus,
-.navbar-navigation-items a:active {
+.navbar-navigation-items a.active {
   color: var(--secondary-text);
 }
 

@@ -9,35 +9,32 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Projects = () => {
   const [projects] = React.useState([
     {
-      name: 'ReDucks',
+      name: 'Event Hive',
       img: '../../assets/images/img_reducks_card.jpg',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatibus itaque ',
-      stack: ['React', 'Express', 'Node'],
-      icon: 'wrench',
-
-      demourl: 'https://shielded-sands-80926.herokuapp.com/',
-      githuburl: 'https://github.com/reducks-team/grace-shopper',
+        'Event-based social media app that connects users based on shared interests of upcoming events.',
+      stack: ['React Native', 'Firebase/Firestore', 'Eventbrite API'],
+      demourl:
+        'https://media.licdn.com/embeds/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fvideoseries%3Flist%3DPLx0iOsdUOUmnZXS2H9EDbhYMlmh3onWHs&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D5K37kXpwZ4g%26list%3DPLx0iOsdUOUmnZXS2H9EDbhYMlmh3onWHs%26index%3D7&amp;type=text%2Fhtml&amp;schema=youtube',
+      githuburl: 'https://github.com/yoshis-yodelers/event-hive',
     },
     {
       name: 'ReDucks',
       img: '../../assets/images/img_macbook.png',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatibus itaque ',
-      stack: ['React', 'Express', 'Node'],
-      icon: '',
-      demourl: 'https://github.com',
-      githuburl: 'https://github.com',
+        'E-commerce website featuring rubber ducks to assist with Rubber Duck Debugging.',
+      stack: ['React', 'Express', 'Material UI'],
+      demourl: 'https://shielded-sands-80926.herokuapp.com/',
+      githuburl: 'https://github.com/reducks-team/grace-shopper',
     },
     {
-      name: 'ReDucks',
+      name: 'Atlanta Helicopter Tours',
       img:
         'https://images.pexels.com/photos/1220757/pexels-photo-1220757.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatibus itaque ',
-      stack: ['React', 'Express', 'Node'],
-      icon: '',
-      demourl: '',
+        'Booking website for a helicopter flight tours company in Atlanta. Built in 2017. I am currently redesigning/redeveloping this website.',
+      stack: ['Wordpress', 'HTML', 'CSS'],
+      demourl: 'http://atlantahelicoptertours.com/',
       githuburl: '',
     },
   ]);

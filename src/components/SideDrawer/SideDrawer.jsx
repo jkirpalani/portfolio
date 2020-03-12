@@ -71,19 +71,6 @@ const SideDrawer = ({ show, close, click }) => {
               Contact Me
             </Link>
           </li>
-          <li>
-            <Link
-              activeClass="active"
-              to="contact"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={200}
-              onClick={click}
-            >
-              Resume
-            </Link>
-          </li>
         </ul>
       </div>
       <div className="side-drawer-icon-container">

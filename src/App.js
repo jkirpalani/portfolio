@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
 import Hero from './components/hero/Hero';
 import About from './components/about/About';
@@ -8,13 +8,14 @@ import Navbar from './components/Navbar/Navbar';
 import SideDrawer from './components/SideDrawer/SideDrawer';
 import Backdrop from './components/Backdrop/Backdrop';
 import Footer from './components/footer/Footer';
+// import Resume from './components/Resume/Resume';
 
 const App = () => {
-  const [appendClass, setAppendClass] = React.useState(false);
-  const [sideDrawerOpen, setSideDrawerOpen] = React.useState(false);
-  const elementToObserveRef = React.useRef();
+  const [appendClass, setAppendClass] = useState(false);
+  const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
+  const elementToObserveRef = useRef();
 
-  React.useEffect(() => {
+  useEffect(() => {
     const observerOptions = {
       rootMargin: '-550px 0px 0px 0px',
     };

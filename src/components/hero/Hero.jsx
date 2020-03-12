@@ -1,6 +1,7 @@
 import React, { useState, forwardRef } from 'react';
 import './hero.styles.scss';
 import CustomButton from '../custom-button/custom-button';
+import Resume from '../Resume/Resume';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { motion } from 'framer-motion';
 import HeroSVG from '../HeroSVG/HeroSVG';
@@ -24,13 +25,21 @@ const Hero = forwardRef((props, ref) => {
         </header>
 
         <div className="link-and-button-container">
-          <CustomButton id="hero-projects-button" to="project-section">
+          <CustomButton
+            id="hero-projects-button"
+            to="project-section"
+            buttonType="anchor"
+          >
             <span>
               Projects
               <FontAwesomeIcon icon="rocket" className="fa-icon" />
             </span>
           </CustomButton>
-          <CustomButton id="hero-resume-button">
+          <CustomButton
+            id="hero-resume-button"
+            buttonType="external"
+            href="https://drive.google.com/file/d/17oMBrDb2JYZKRUT5T2__yrKZtTt5MnHd/view?usp=sharing"
+          >
             <span>
               Resume
               <FontAwesomeIcon icon="rocket" className="fa-icon" />

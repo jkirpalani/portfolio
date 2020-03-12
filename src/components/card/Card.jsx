@@ -3,6 +3,8 @@ import './card.styles.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Card = ({ project }) => {
+  const { demourl, githuburl } = project;
+
   return (
     <div class="card">
       <h3 class="title">{project.name}</h3>
@@ -16,15 +18,28 @@ const Card = ({ project }) => {
       </div>
       <div className="hover-links">
         <ul>
-          <li>
-            <a href={project.githuburl}>
-              Demo
-              <FontAwesomeIcon icon={project.wrench} className="option-icon" />
-            </a>
-          </li>
-          <li>
-            <a href={project.githuburl}>Github URL</a>
-          </li>
+          {demourl && (
+            <li>
+              <a href={project.demourl}>
+                Demo
+                <FontAwesomeIcon
+                  icon={project.wrench}
+                  className="option-icon"
+                />
+              </a>
+            </li>
+          )}
+          {githuburl && (
+            <li>
+              <a href={project.githuburl}>
+                Github
+                <FontAwesomeIcon
+                  icon={project.wrench}
+                  className="option-icon"
+                />
+              </a>
+            </li>
+          )}
         </ul>
       </div>
     </div>
