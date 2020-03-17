@@ -19,7 +19,7 @@ const Navbar = ({ drawerClickHander, appendClass }) => {
             to="hero"
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-50}
             duration={500}
           >
             JK
@@ -34,7 +34,7 @@ const Navbar = ({ drawerClickHander, appendClass }) => {
                 to="about"
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={-50}
                 duration={500}
               >
                 About
@@ -46,7 +46,7 @@ const Navbar = ({ drawerClickHander, appendClass }) => {
                 to="project-section"
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={-50}
                 duration={500}
               >
                 Projects
@@ -58,7 +58,7 @@ const Navbar = ({ drawerClickHander, appendClass }) => {
                 to="contact"
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={-50}
                 duration={500}
               >
                 Contact Me
@@ -69,13 +69,23 @@ const Navbar = ({ drawerClickHander, appendClass }) => {
             </li>
 
             <li>
-              <a href className="nav-icon" to="">
+              <a
+                href="https://github.com/jkirpalani"
+                className="nav-icon"
+                alt="github"
+                target="_blank"
+              >
                 <FontAwesomeIcon icon={['fab', 'github']} />
               </a>
             </li>
 
             <li>
-              <a href className="nav-icon" to="">
+              <a
+                href="https://www.linkedin.com/in/johnny-kirpalani"
+                className="nav-icon"
+                alt="linkedIn"
+                target="_blank"
+              >
                 <FontAwesomeIcon icon={['fab', 'linkedin']} />
               </a>
             </li>

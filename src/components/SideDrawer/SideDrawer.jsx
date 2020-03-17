@@ -23,7 +23,7 @@ const SideDrawer = ({ show, close, click }) => {
           to="hero"
           spy={true}
           smooth={true}
-          offset={-70}
+          offset={-50}
           duration={200}
           onClick={click}
         >
@@ -38,7 +38,7 @@ const SideDrawer = ({ show, close, click }) => {
               to="about"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-50}
               duration={200}
               onClick={click}
             >
@@ -51,7 +51,7 @@ const SideDrawer = ({ show, close, click }) => {
               to="project-section"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-50}
               duration={200}
               onClick={click}
             >
@@ -64,7 +64,7 @@ const SideDrawer = ({ show, close, click }) => {
               to="contact"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-50}
               duration={200}
               onClick={click}
             >
@@ -76,12 +76,20 @@ const SideDrawer = ({ show, close, click }) => {
       <div className="side-drawer-icon-container">
         <ul className="side-drawer-icons">
           <li>
-            <a href="#" alt="github">
+            <a
+              href="https://github.com/jkirpalani"
+              target="_blank"
+              alt="github"
+            >
               <FontAwesomeIcon icon={['fab', 'github']} />
             </a>
           </li>
           <li>
-            <a href="#" alt="linkedin">
+            <a
+              href="https://www.linkedin.com/in/johnny-kirpalani"
+              target="_blank"
+              alt="linkedin"
+            >
               <FontAwesomeIcon icon={['fab', 'linkedin']} />
             </a>
           </li>

@@ -8,6 +8,7 @@ import Navbar from './components/Navbar/Navbar';
 import SideDrawer from './components/SideDrawer/SideDrawer';
 import Backdrop from './components/Backdrop/Backdrop';
 import Footer from './components/footer/Footer';
+import SideDrawer2 from './components/SideDrawer2/SideDrawer2';
 // import Resume from './components/Resume/Resume';
 
 const App = () => {
@@ -52,11 +53,11 @@ const App = () => {
     return setSideDrawerOpen(!sideDrawerOpen);
   };
 
-  let backdrop;
+  // let backdrop;
 
-  if (sideDrawerOpen) {
-    backdrop = <Backdrop click={backdropClickHandler} />;
-  }
+  // if (sideDrawerOpen) {
+  //   backdrop = <Backdrop click={backdropClickHandler} />;
+  // }
 
   return (
     <div>
@@ -64,12 +65,18 @@ const App = () => {
         drawerClickHander={drawerToggleClickHander}
         appendClass={appendClass}
       />
-      <SideDrawer
+
+      {/* <SideDrawer
         show={sideDrawerOpen}
         close={sideDrawerClickHandler}
         click={closeSideDrawer}
+      /> */}
+      {/* {backdrop} */}
+      <SideDrawer2
+      // show={sideDrawerOpen}
+      // close={sideDrawerClickHandler}
+      // click={closeSideDrawer}
       />
-      {backdrop}
       <Hero ref={elementToObserveRef} />
       <About />
       <Projects />
