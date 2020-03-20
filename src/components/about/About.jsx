@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import './about.styles.scss';
+import './About.styles.scss';
 
 const About = React.forwardRef((props, ref) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -21,16 +21,13 @@ const About = React.forwardRef((props, ref) => {
   React.useEffect(() => {
     const aboutObserverOptions = {
       threshold: 0.4,
-      // rootMargin: '-1000px 0px 0px 0px',
     };
 
     const aboutObserver = new IntersectionObserver((entries, observer) => {
       if (!entries[0].isIntersecting) {
         setIsVisible(false);
-        console.log('intersecting', aboutRef.current);
       } else {
         setIsVisible(true);
-        console.log('intersecting', aboutRef.current);
       }
     }, aboutObserverOptions);
 

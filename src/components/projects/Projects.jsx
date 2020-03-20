@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
-import Card2 from '../card/Card2';
-import './project.styles.scss';
+import Card from '../Card/Card';
+import './Project.styles.scss';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -57,10 +57,8 @@ const Projects = () => {
     const projectObserver = new IntersectionObserver((entries, observer) => {
       if (!entries[0].isIntersecting) {
         setIsVisible(false);
-        console.log('intersecting', projectsRef.current);
       } else {
         setIsVisible(true);
-        console.log('intersecting', projectsRef.current);
       }
     }, projectObserverOptions);
 
@@ -75,8 +73,12 @@ const Projects = () => {
           <FontAwesomeIcon icon="wrench" className="option-icon" />
           PROJECTS
         </h2>
-        <div className="card-container">
-          <Card2 projects={projects} />
+        <div className="card-stack">
+          <div className="card-container">
+            {projects.map((project, i) => (
+              <Card project={project} key={i} />
+            ))}
+          </div>
         </div>
       </div>
     </motion.div>

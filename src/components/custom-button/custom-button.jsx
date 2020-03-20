@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 
-import './custom-button.styles.scss';
+import './Custom-Button.styles.scss';
 
 const CustomButton = ({
   children,
@@ -34,6 +34,7 @@ const CustomButton = ({
             href={url}
             className="custom-button fancy-button bg-gradient1"
             target="_blank"
+            rel="noopener noreferrer"
             {...otherProps}
           >
             {children}

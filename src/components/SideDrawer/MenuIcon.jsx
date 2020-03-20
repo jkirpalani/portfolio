@@ -20,14 +20,19 @@ const variants = {
 };
 
 export const MenuIcon = ({ name, url, icon }) => {
-  console.log(name, url);
   return (
     <motion.li
       variants={variants}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
     >
-      <a href={url} className="nav-icon" alt={name} target="_blank">
+      <a
+        href={url}
+        className="nav-icon"
+        alt={name}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <FontAwesomeIcon icon={['fab', icon]} />
       </a>
     </motion.li>

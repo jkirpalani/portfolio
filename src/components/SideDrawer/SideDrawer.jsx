@@ -1,101 +1,30 @@
-import React from 'react';
-import { Link, animateScroll as scroll } from 'react-scroll';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import './Sidedrawer.styles.css';
-import CloseDrawerButton from './CloseDrawerButton';
+import * as React from 'react';
+import { useRef, useState } from 'react';
+import { motion } from 'framer-motion';
+import { MenuToggle } from './MenuToggle';
+import { Navigation } from './Navigation';
+import './SideDrawer.styles.css';
 
-const SideDrawer = ({ show, close, click }) => {
-  let drawerClasses = 'side-drawer';
+const backgroundVariants = {
+  open: { opacity: 1 },
+  closed: { opacity: 0 },
+};
 
-  if (show) {
-    drawerClasses = 'side-drawer open';
-  } else {
-    drawerClasses = 'side-drawer';
-  }
+const SideDrawer = () => {
+  const [isOpen, setOpen] = useState(false);
+  const containerRef = useRef(null);
 
   return (
-    <nav className={drawerClasses}>
-      <CloseDrawerButton click={close} />
-      <div className="navbar-toggle-button"></div>
-      <div className="navbar-logo">
-        <Link
-          activeClass="active"
-          to="hero"
-          spy={true}
-          smooth={true}
-          offset={-50}
-          duration={200}
-          onClick={click}
-        >
-          JK
-        </Link>
-      </div>
-      <div className="side-drawer-links">
-        <ul>
-          <li>
-            <Link
-              activeClass="active"
-              to="about"
-              spy={true}
-              smooth={true}
-              offset={-50}
-              duration={200}
-              onClick={click}
-            >
-              About
-            </Link>
-          </li>
-          <li>
-            <Link
-              activeClass="active"
-              to="project-section"
-              spy={true}
-              smooth={true}
-              offset={-50}
-              duration={200}
-              onClick={click}
-            >
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link
-              activeClass="active"
-              to="contact"
-              spy={true}
-              smooth={true}
-              offset={-50}
-              duration={200}
-              onClick={click}
-            >
-              Contact Me
-            </Link>
-          </li>
-        </ul>
-      </div>
-      <div className="side-drawer-icon-container">
-        <ul className="side-drawer-icons">
-          <li>
-            <a
-              href="https://github.com/jkirpalani"
-              target="_blank"
-              alt="github"
-            >
-              <FontAwesomeIcon icon={['fab', 'github']} />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/johnny-kirpalani"
-              target="_blank"
-              alt="linkedin"
-            >
-              <FontAwesomeIcon icon={['fab', 'linkedin']} />
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <motion.nav
+      className="sidedrawer"
+      ref={containerRef}
+      initial={false}
+      animate={isOpen ? 'open' : 'closed'}
+    >
+      <motion.div className="background" variants={backgroundVariants} />
+      <Navigation />
+      <MenuToggle toggle={() => setOpen(!isOpen)} />
+    </motion.nav>
   );
 };
 

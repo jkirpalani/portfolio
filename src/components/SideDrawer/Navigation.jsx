@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { motion, Variants } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { MenuItem } from './MenuItem';
 import { MenuIcon } from './MenuIcon';
 
@@ -54,10 +54,7 @@ export const Navigation = props => {
           ))}
         </motion.ul>
       </div>
-      <motion.div
-        className="side-drawer-horizontal-divider"
-        variants={variants}
-      />
+
       <div className="menu-icons-container">
         <motion.ul variants={variants} className="menu-icons">
           {menuIcons.map(({ name, url }, i) => (

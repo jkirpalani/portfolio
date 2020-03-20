@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { motion } from 'framer-motion';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 const variants = {
   open: {
@@ -20,7 +20,6 @@ const variants = {
 };
 
 export const MenuItem = ({ name, url }) => {
-  console.log(name, url);
   return (
     <motion.li
       variants={variants}

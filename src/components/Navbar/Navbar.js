@@ -1,18 +1,13 @@
 import React from 'react';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
 import './Navbar.css';
 
 const Navbar = ({ drawerClickHander, appendClass }) => {
-  console.log('is append true', appendClass);
-
   return (
     <header className={`navbar${appendClass ? ' nav-scrolled' : ''}`}>
       <nav className="navbar-navigation">
-        <div className="navbar-toggle-button">
-          <DrawerToggleButton click={drawerClickHander} />
-        </div>
+        <div className="navbar-toggle-button"></div>
         <div className="navbar-logo">
           <Link
             activeClass="active"
@@ -74,6 +69,7 @@ const Navbar = ({ drawerClickHander, appendClass }) => {
                 className="nav-icon"
                 alt="github"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <FontAwesomeIcon icon={['fab', 'github']} />
               </a>
@@ -85,6 +81,7 @@ const Navbar = ({ drawerClickHander, appendClass }) => {
                 className="nav-icon"
                 alt="linkedIn"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <FontAwesomeIcon icon={['fab', 'linkedin']} />
               </a>

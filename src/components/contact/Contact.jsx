@@ -1,32 +1,11 @@
 import React, { useState } from 'react';
-
-import FormInput from '../form-input/form-input';
-import Form from '../Form/form';
-import CustomButton from '../custom-button/custom-button';
+import Form from '../Form/Form';
 import { motion } from 'framer-motion';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import contactImage1 from '../../assets/images/heic1808a.jpg';
-import './contact.styles.css';
+import contactImage1 from '../../assets/images/img_contact-section.jpg';
+import './Contact.styles.css';
 
 const Contact = props => {
-  // const [formState, setFormState] = useState({
-  //   name: '',
-  //   email: '',
-  //   message: '',
-  // });
-
   const [isVisible, setIsVisible] = useState(false);
-
-  // const handleSubmit = event => {
-  //   event.preventDefault();
-  //   setFormState({ name: '', email: '', message: '' });
-  // };
-
-  // const handleChange = event => {
-  //   const { value, name } = event.target;
-  //   setFormState({ [name]: value });
-  // };
-
   const contactRef = React.useRef();
   const variants = {
     open: {
@@ -43,10 +22,8 @@ const Contact = props => {
     const contactObserver = new IntersectionObserver((entries, observer) => {
       if (!entries[0].isIntersecting) {
         setIsVisible(false);
-        console.log('intersecting', contactRef.current);
       } else {
         setIsVisible(true);
-        console.log('intersecting', contactRef.current);
       }
     }, contactObserverOptions);
 

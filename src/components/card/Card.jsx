@@ -1,18 +1,17 @@
 import React from 'react';
-import './card.styles.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import './Card.styles.scss';
 
 const Card = ({ project }) => {
   const { demourl, githuburl } = project;
 
   return (
-    <div class="card">
-      <h3 class="title">{project.name}</h3>
-      <div class="project-description">{project.description}</div>
-      <div class="stack-list">
+    <div className="card">
+      <h3 className="title">{project.name}</h3>
+      <div className="project-description">{project.description}</div>
+      <div className="stack-list">
         <ul>
-          {project.stack.map(e => (
-            <li>{e}</li>
+          {project.stack.map((e, i) => (
+            <li key={i}>{e}</li>
           ))}
         </ul>
       </div>
@@ -20,30 +19,17 @@ const Card = ({ project }) => {
         <ul>
           {demourl && (
             <li>
-              <a href={project.demourl}>
-                Demo
-                <FontAwesomeIcon
-                  icon={project.wrench}
-                  className="option-icon"
-                />
-              </a>
+              <a href={project.demourl}>Demo</a>
             </li>
           )}
           {githuburl && (
             <li>
-              <a href={project.githuburl}>
-                Github
-                <FontAwesomeIcon
-                  icon={project.wrench}
-                  className="option-icon"
-                />
-              </a>
+              <a href={project.githuburl}>Github</a>
             </li>
           )}
         </ul>
       </div>
     </div>
-    // </div>
   );
 };
 export default Card;

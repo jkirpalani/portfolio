@@ -1,9 +1,7 @@
-import React, { useState, forwardRef } from 'react';
-import './hero.styles.scss';
-import CustomButton from '../custom-button/custom-button';
-import Resume from '../Resume/Resume';
+import React, { forwardRef } from 'react';
+import './Hero.styles.scss';
+import CustomButton from '../Custom-Button/Custom-Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { motion } from 'framer-motion';
 import HeroSVG from '../HeroSVG/HeroSVG';
 
 const Hero = forwardRef((props, ref) => {
@@ -14,11 +12,11 @@ const Hero = forwardRef((props, ref) => {
 
         <header className="hero-header">
           <h1 className="hero-h1">
-            Hi, I'm <span className="highlight">Johnny Kirpalani</span>
+            Hi, I'm <span className="highlight">Johnny Kirpalani, </span>
           </h1>
 
           <h2 className="hero-h2">
-            I'm a{' '}
+            and I'm a{' '}
             <span className="highlight">Full Stack Software Engineer</span> From
             NYC
           </h2>

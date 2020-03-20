@@ -1,7 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import './Form.styles.scss';
-import CustomButton from '../custom-button/custom-button';
+import CustomButton from '../Custom-Button/Custom-Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Form = props => {
