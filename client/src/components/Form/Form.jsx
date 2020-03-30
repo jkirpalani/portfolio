@@ -16,12 +16,12 @@ const Form = props => {
 
   const onSubmit = data => {
     console.log(data);
-    // alert(JSON.stringify(data));
     reset();
 
     axios({
       method: 'POST',
-      url: 'http://localhost:5000/send',
+      url:
+        'https://us-central1-portfolio-83a06.cloudfunctions.net/emailMessage',
       data: {
         firstName: data.firstName,
         lastName: data.lastName,
@@ -30,10 +30,10 @@ const Form = props => {
       },
     }).then(response => {
       if (response.data.msg === 'success') {
-        alert('Email sent, awesome!');
+        console.log('Email sent!');
         reset();
       } else if (response.data.msg === 'fail') {
-        alert('Oops, something went wrong. Try again');
+        console.log('Something went wrong. Try again');
       }
     });
   };
