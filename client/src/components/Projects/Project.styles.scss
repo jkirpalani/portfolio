@@ -51,26 +51,28 @@ $color-primary-dark: rgb(143, 94, 223);
   }
 
   .card-container {
-    margin-top: 0em;
+    margin-top: 5em;
     width: 100%;
-    display: flex;
-    // flex-direction: column;
-    // justify-content: space-evenly;
-    // flex-wrap: wrap;
-  }
-
-  .container {
-    height: 100%;
-    padding-top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    // justify-content: space-evenly;
+    // flex-wrap: wrap;
   }
 
+  // .container {
+  //   height: 100%;
+  //   padding-top: 0;
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
+  // }
+
   .card {
-    width: 200px;
-    height: 300px;
+    width: 80%;
+    height: 400px;
     // margin: 1em auto;
   }
 }

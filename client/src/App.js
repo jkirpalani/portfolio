@@ -6,10 +6,18 @@ import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
+import { MenuToggle } from './components/SideDrawer/MenuToggle';
 import SideDrawer from './components/SideDrawer/SideDrawer';
 
 const App = () => {
   const [appendClass, setAppendClass] = useState(false);
+  const [isOpen, setOpen] = useState(false);
+
+  const handleToggle = (e) => {
+    e.preventDefault();
+    setOpen(!isOpen);
+  };
+
   const elementToObserveRef = useRef();
 
   useEffect(() => {
@@ -29,10 +37,16 @@ const App = () => {
     return () => observer.disconnect();
   }, []);
 
+  let showDrawer;
+  if (isOpen) {
+    showDrawer = <SideDrawer isOpen={isOpen} handleToggle={handleToggle} />;
+  }
+
   return (
     <div>
+      <MenuToggle handleToggle={handleToggle} isOpen={isOpen} />
       <Navbar appendClass={appendClass} />
-      <SideDrawer />
+      {showDrawer}
       <Hero ref={elementToObserveRef} />
       <About />
       <Projects />

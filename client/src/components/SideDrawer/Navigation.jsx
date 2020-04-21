@@ -18,7 +18,7 @@ const variants = {
   },
 };
 
-export const Navigation = props => {
+export const Navigation = ({ isOpen, handleToggle }) => {
   const menuLinks = [
     {
       name: 'About',
@@ -48,17 +48,46 @@ export const Navigation = props => {
   return (
     <div className="navigation-container">
       <div className="menu-items-container">
-        <motion.ul variants={variants} className="menu-items">
+        <motion.ul
+          variants={variants}
+          className="menu-items"
+          isOpen={isOpen}
+          initial={'closed'}
+          animate={isOpen ? 'open' : 'closed'}
+        >
           {menuLinks.map(({ name, url }, i) => (
-            <MenuItem key={i} name={name} url={url} />
+            <MenuItem
+              handleToggle={handleToggle}
+              key={i}
+              name={name}
+              url={url}
+              isOpen={isOpen}
+              initial={'open'}
+              animate={isOpen ? 'open' : 'closed'}
+            />
           ))}
         </motion.ul>
       </div>
 
       <div className="menu-icons-container">
-        <motion.ul variants={variants} className="menu-icons">
-          {menuIcons.map(({ name, url }, i) => (
-            <MenuIcon key={i} alt={name} url={url} icon={name} />
+        <motion.ul
+          variants={variants}
+          className="menu-icons"
+          isOpen={isOpen}
+          initial={'open'}
+          animate={isOpen ? 'open' : 'closed'}
+        >
+          {menuIcons.map(({ name, url, handleToggle }, i) => (
+            <MenuIcon
+              handleToggle={handleToggle}
+              key={i}
+              alt={name}
+              url={url}
+              icon={name}
+              isOpen={isOpen}
+              initial={'open'}
+              animate={isOpen ? 'open' : 'closed'}
+            />
           ))}
         </motion.ul>
       </div>

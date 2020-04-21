@@ -125,7 +125,7 @@
   color: rgba(71, 244, 207, 0.7);
 }
 
-.side-drawer-horizontal-divider::before {
+/* .side-drawer-horizontal-divider::before {
   position: absolute;
   content: '';
   display: block;
@@ -133,7 +133,7 @@
   width: 30px;
   padding: 5px 0;
   border-bottom: 1px solid #ff6584;
-}
+} */
 
 .refresh {
   padding: 10px;
@@ -150,9 +150,9 @@
   cursor: pointer;
 }
 
-.side-drawer-button {
+/* .side-drawer-button {
   z-index: 206;
-}
+} */
 
 @media only screen and (min-width: 577px) {
   .sidedrawer {

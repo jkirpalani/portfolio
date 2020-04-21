@@ -22,7 +22,7 @@ exports.emailMessage = functions.https.onRequest((req, res) => {
       from: 'info@johnnyk.dev',
       to: 'info@johnnyk.dev',
       subject: 'Contact form request',
-      html: `<p> From: ${firstName} ${lastName} <br/>Email: ${email} <br/>Message: ${message}</p>`,
+      html: `<p> From: ${firstName} ${lastName}, <br/>Email: ${email}, <br/>Message: ${message}</p>`,
     };
 
     transporter.sendMail(mailOptions, (error, info) => {

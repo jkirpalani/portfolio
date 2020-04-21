@@ -19,7 +19,7 @@ const variants = {
   },
 };
 
-export const MenuItem = ({ name, url }) => {
+export const MenuItem = ({ name, url, handleToggle }) => {
   return (
     <motion.li
       variants={variants}
@@ -33,6 +33,7 @@ export const MenuItem = ({ name, url }) => {
         smooth={true}
         offset={-50}
         duration={500}
+        onClick={handleToggle}
       >
         {name}
       </Link>
