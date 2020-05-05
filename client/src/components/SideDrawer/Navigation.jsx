@@ -84,9 +84,9 @@ export const Navigation = ({ isOpen, handleToggle }) => {
               alt={name}
               url={url}
               icon={name}
-              isOpen={isOpen}
-              initial={'open'}
-              animate={isOpen ? 'open' : 'closed'}
+              // isOpen={isOpen}
+              // initial={'closed'}
+              // animate={isOpen ? 'open' : 'closed'}
             />
           ))}
         </motion.ul>

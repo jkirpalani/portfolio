@@ -22,7 +22,7 @@ const variants = {
 export const MenuItem = ({ name, url, handleToggle }) => {
   return (
     <motion.li
-      variants={variants}
+      variants={variants.closed}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
     >

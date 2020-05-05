@@ -62,7 +62,7 @@ const About = React.forwardRef((props, ref) => {
           <br />
           <p>
             My interests include photography, hiking, camping, fitness,
-            meditation, and drinking copious amounts of tea while reading
+            meditation, and drinking copious amounts of coffee while reading
             science fiction.
           </p>
 
