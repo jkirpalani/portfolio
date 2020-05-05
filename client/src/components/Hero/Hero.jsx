@@ -36,7 +36,7 @@ const Hero = forwardRef((props, ref) => {
           <CustomButton
             id="hero-resume-button"
             buttonType="external"
-            href="https://drive.google.com/file/d/17oMBrDb2JYZKRUT5T2__yrKZtTt5MnHd/view?usp=sharing"
+            href="https://drive.google.com/file/d/1i9T1aOUoLPdvhesT1rQTAdA9tJ-2R8PS/view?usp=sharing"
           >
             <span>
               Resume
