@@ -1,17 +1,17 @@
-import React from 'react';
-import { Link } from 'react-scroll';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import './Navbar.css';
+import React from 'react'
+import { Link } from 'react-scroll'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import './Navbar.css'
 
 const Navbar = ({ drawerClickHander, appendClass }) => {
   return (
     <header className={`navbar${appendClass ? ' nav-scrolled' : ''}`}>
-      <nav className="navbar-navigation">
-        <div className="navbar-toggle-button"></div>
-        <div className="navbar-logo">
+      <nav className='navbar-navigation'>
+        <div className='navbar-toggle-button'></div>
+        <div className='navbar-logo'>
           <Link
-            activeClass="active"
-            to="hero"
+            activeClass='active'
+            to='hero'
             spy={true}
             smooth={true}
             offset={-50}
@@ -20,13 +20,13 @@ const Navbar = ({ drawerClickHander, appendClass }) => {
             JK
           </Link>
         </div>
-        <div className="navbar-spacing"></div>
-        <div className="navbar-navigation-items">
+        <div className='navbar-spacing'></div>
+        <div className='navbar-navigation-items'>
           <ul>
             <li>
               <Link
-                activeClass="active"
-                to="about"
+                activeClass='active'
+                to='about'
                 spy={true}
                 smooth={true}
                 offset={-50}
@@ -37,8 +37,8 @@ const Navbar = ({ drawerClickHander, appendClass }) => {
             </li>
             <li>
               <Link
-                activeClass="active"
-                to="project-section"
+                activeClass='active'
+                to='project-section'
                 spy={true}
                 smooth={true}
                 offset={-50}
@@ -49,8 +49,8 @@ const Navbar = ({ drawerClickHander, appendClass }) => {
             </li>
             <li>
               <Link
-                activeClass="active"
-                to="contact"
+                activeClass='active'
+                to='contact'
                 spy={true}
                 smooth={true}
                 offset={-50}
@@ -60,16 +60,16 @@ const Navbar = ({ drawerClickHander, appendClass }) => {
               </Link>
             </li>
             <li>
-              <div className="option-separator">|</div>
+              <div className='option-separator'>|</div>
             </li>
 
             <li>
               <a
-                href="https://github.com/jkirpalani"
-                className="nav-icon"
-                alt="github"
-                target="_blank"
-                rel="noopener noreferrer"
+                href='https://github.com/jkirpalani'
+                className='nav-icon'
+                alt='github'
+                target='_blank'
+                rel='noopener noreferrer'
               >
                 <FontAwesomeIcon icon={['fab', 'github']} />
               </a>
@@ -77,11 +77,11 @@ const Navbar = ({ drawerClickHander, appendClass }) => {
 
             <li>
               <a
-                href="https://www.linkedin.com/in/johnny-kirpalani"
-                className="nav-icon"
-                alt="linkedIn"
-                target="_blank"
-                rel="noopener noreferrer"
+                href='https://www.linkedin.com/in/johnny-kirpalani'
+                className='nav-icon'
+                alt='linkedIn'
+                target='_blank'
+                rel='noopener noreferrer'
               >
                 <FontAwesomeIcon icon={['fab', 'linkedin']} />
               </a>
@@ -90,7 +90,7 @@ const Navbar = ({ drawerClickHander, appendClass }) => {
         </div>
       </nav>
     </header>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

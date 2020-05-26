@@ -4,7 +4,7 @@ $color-primary-dark: #1b66d8;
 .hero {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   height: 100vh;
   background-image: linear-gradient(
@@ -16,34 +16,28 @@ $color-primary-dark: #1b66d8;
 .custom-button {
   z-index: 100;
 }
-.left-content-hero {
+.hero-container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 100%;
+  margin: auto 0 auto 0;
 }
 
-h1,
-h2 {
-  /* text-transform: uppercase; */
-  font-family: Montserrat;
+.hero-header {
+  margin: 4em 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .hero-h1 {
-  text-align: center;
   font-size: 2.4rem;
-  font-weight: 200;
-  margin: 0;
   padding: 0;
 }
 
 .hero-h2 {
-  text-align: center;
   font-size: 2.2rem;
-  font-weight: 200;
-  margin: 0;
-  padding: 0;
 }
 
 .background-image {
@@ -59,12 +53,7 @@ h2 {
   display: flex;
   align-items: space-betweem;
   justify-content: center;
-  margin-bottom: 2em;
 }
-
-/* .highlight {
-  color: #0066ff;
-} */
 
 .fa-icon {
   margin-left: 5px;
@@ -74,12 +63,12 @@ h2 {
 @media only screen and (max-width: 576px) {
   .hero {
     display: grid;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     height: 100vh;
   }
 
-  .left-content-hero {
+  .hero-container {
     order: 1;
     display: flex;
     flex-direction: column;
@@ -87,12 +76,10 @@ h2 {
     align-items: center;
     margin: 0;
     padding: 0;
-    height: 100%;
   }
 
   .hero-header {
-    margin: 2em 0;
-    /* font-size: 200; */
+    margin: 2em 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -121,7 +108,6 @@ h2 {
   .background-image {
     padding-top: 3em;
     height: auto;
-    width: 80%;
     min-width: 300px;
     margin: 0 auto;
   }
