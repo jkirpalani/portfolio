@@ -1,0 +1,186 @@
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#09cff1), to(#1b66d8));
+  background-image: linear-gradient(to right bottom, #09cff1, #1b66d8);
+}
+
+.custom-button {
+  z-index: 100;
+}
+
+.hero-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto 0 auto 0;
+}
+
+.hero-header {
+  margin: 4em 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.hero-h1 {
+  font-size: 2.4rem;
+  padding: 0;
+}
+
+.hero-h2 {
+  font-size: 2.2rem;
+}
+
+.background-image {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: auto;
+  width: 70%;
+  min-width: 500px;
+  margin: 0 auto;
+  padding-top: 4em;
+}
+
+.link-and-button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: space-betweem;
+      -ms-flex-align: space-betweem;
+          align-items: space-betweem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fa-icon {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+@media only screen and (max-width: 576px) {
+  .hero {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100vh;
+  }
+  .hero-container {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  .hero-header {
+    margin: 2em 0.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  h1,
+  h2 {
+    font-family: Montserrat;
+  }
+  .hero-h1 {
+    font-size: 1.4rem;
+    font-weight: 100;
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+  .hero-h2 {
+    font-size: 1.4rem;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .background-image {
+    padding-top: 3em;
+    height: auto;
+    min-width: 300px;
+    margin: 0 auto;
+  }
+  #hero-projects-button {
+    margin-bottom: 5px;
+  }
+  .link-and-button-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    height: 50%;
+  }
+  .highlight {
+    color: white;
+  }
+  .fa-icon {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+/*# sourceMappingURL=Hero.styles.css.map */

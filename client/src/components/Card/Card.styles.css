@@ -1,0 +1,240 @@
+.card-container {
+  max-width: 60%;
+  min-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-stack {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 420px;
+  max-width: 350px;
+  min-width: 250px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#434769), to(#3d3a3a));
+  background-image: linear-gradient(to right bottom, #434769, #3d3a3a);
+  border-radius: 10px;
+  -webkit-box-shadow: -1rem 0 3rem rgba(0, 0, 0, 0.7);
+          box-shadow: -1rem 0 3rem rgba(0, 0, 0, 0.7);
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+}
+
+.project-description {
+  text-align: center;
+  margin: 1em;
+}
+
+.card img {
+  height: 100%;
+  width: auto;
+  position: relative;
+}
+
+.card h3 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#089fe6), to(transparent));
+  background-image: linear-gradient(to right, #089fe6, transparent);
+  width: 100%;
+  height: 2.5em;
+  font-size: 1.25em;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding-top: 0.6em;
+}
+
+.stack-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+  width: 100%;
+}
+
+.stack-list ul li {
+  text-align: center;
+  color: white;
+  font-size: 1em;
+  list-style: none;
+  padding: 0.35em 0;
+  width: 130px;
+}
+
+.stack-list ul li:not(:last-child)::after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 30px;
+  padding: 5px 0;
+  border-bottom: 1px solid #ff6584;
+}
+
+.card:not(:first-child) {
+  margin-left: -50px;
+}
+
+.card:hover {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+}
+
+.card .hover-links ul {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: rgba(255, 255, 255, 0);
+}
+
+.card .hover-links ul li {
+  background-image: -webkit-gradient(linear, left top, right top, from(#089fe6), to(#045c85));
+  background-image: linear-gradient(to right, #089fe6, #045c85);
+  border-radius: 0 15px 15px 0;
+  height: 40px;
+  width: 100px;
+  text-align: center;
+  line-height: 40px;
+  -webkit-transform: perspective(200px) rotateY(90deg);
+          transform: perspective(200px) rotateY(90deg);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.card:hover .hover-links ul li {
+  -webkit-transform: perspective(200px) rotateY(0deg);
+          transform: perspective(200px) rotateY(0deg);
+}
+
+.card:hover .hover-links ul li:nth-child(1) {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.card:hover .hover-links ul li:nth-child(2) {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.card:hover .hover-links ul li:nth-child(3) {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.card:hover .hover-links ul li:nth-child(4) {
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+.card .hover-links ul li a {
+  color: white;
+}
+
+.card .hover-links ul li i {
+  color: tomato;
+}
+
+.card .hover-links ul li:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff6584), to(#a52e46));
+  background-image: linear-gradient(to right, #ff6584, #a52e46);
+}
+
+.title {
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+@media only screen and (max-width: 576px) {
+  .card {
+    width: 90%;
+    height: 50vh;
+  }
+  .card-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card:hover ~ .card {
+    position: relative;
+    left: 0px;
+    -webkit-transition: 0.4s ease-out;
+    transition: 0.4s ease-out;
+  }
+  .card:not(:first-child) {
+    margin-left: 0px;
+  }
+  .card:hover {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+    -webkit-transition: 0.4s ease-out;
+    transition: 0.4s ease-out;
+  }
+}
+/*# sourceMappingURL=Card.styles.css.map */

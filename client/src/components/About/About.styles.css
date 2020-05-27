@@ -1,0 +1,78 @@
+.about {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#434769), to(#3d3a3a));
+  background-image: linear-gradient(to right bottom, #434769, #3d3a3a);
+  padding: 0 3vh;
+  color: white;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  color: #089fe6;
+}
+
+.about p {
+  font-size: 1.3rem;
+  padding: 0 1rem;
+}
+
+.logo-group {
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #089fe6;
+  width: 100%;
+}
+
+.about .fa-icon {
+  font-size: 6.5rem;
+  padding: 0 2vh;
+}
+
+.paragraph-container {
+  line-height: 1.6;
+}
+
+.about .option-icon {
+  margin-right: 0.3vw;
+}
+
+@media only screen and (max-width: 576px) {
+  .about p {
+    font-size: 0.9rem;
+  }
+  .about h2 {
+    font-size: 1.3em;
+  }
+  .about .fa-icon {
+    font-size: 5rem;
+  }
+  .logo-group {
+    font-size: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #089fe6;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=About.styles.css.map */
